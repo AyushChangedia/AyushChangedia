@@ -31,18 +31,18 @@
 
 </div>
 
-```ansi
-[92m╭─[0m  [1;95mayush@github[0m  [92m────────────────────────────────[0m
-[92m│[0m
-[92m│[0m   [1;36mrole       [0m  [97mAI Engineer  ×  Backend Developer[0m
-[92m│[0m   [1;36mlocation   [0m  [97mPune, India[0m  🇮🇳
-[92m│[0m   [1;36minternships[0m  [93m3×[0m  [90m·[0m  [97mAI · Backend · Data[0m
-[92m│[0m   [1;36mselectivity[0m  [93mTOP 1%[0m [97mof 720+[0m   [90m(1 of 7 chosen)[0m
-[92m│[0m   [1;36mtrading_bot[0m  [93m57.5% win rate[0m   [90m· 120-trade backtest[0m
-[92m│[0m   [1;36mcertified  [0m  [93m4×[0m [97mHackerRank[0m   [90m(SQL · Problem Solving)[0m
-[92m│[0m   [1;36mstatus     [0m  [1;92m⚡ OPEN TO INTERNSHIPS & COLLABS[0m
-[92m│[0m
-[92m╰────────────────────────────────────────────────[0m
+```
+╭─  ayush@github  ─────────────────────────────────────
+│
+│   role         AI Engineer  ×  Backend Developer
+│   location     Pune, India  🇮🇳
+│   internships  3×    ·   AI · Backend · Data
+│   selectivity  TOP 1%   of 720+    (1 of 7 chosen)
+│   trading_bot  57.5% win rate    ·   120-trade backtest
+│   certified    4×   HackerRank    (SQL · Problem Solving)
+│   status       ▸ OPEN TO INTERNSHIPS & COLLABS ⚡
+│
+╰──────────────────────────────────────────────────────
 ```
 
 <div align="center">
