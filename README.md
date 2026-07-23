@@ -2,14 +2,13 @@
 ====================================================================================
   🎯 AYUSH CHANGEDIA · GitHub Profile README
   ------------------------------------------------------------------------------------
-  BEFORE YOU SHIP THIS, REPLACE THE PLACEHOLDERS BELOW (Ctrl/Cmd+F each one):
-    • YOUR_GITHUB_USERNAME   → your GitHub handle (e.g. ayush-changedia)
-    • YOUR_LINKEDIN_USERNAME → the slug in linkedin.com/in/____
-    • YOUR_PORTFOLIO         → your portfolio URL (or delete that badge)
-    • RESUME_LINK            → a raw link to your hosted resume PDF
+  GitHub username is already set to: AyushChangedia
+  STILL TODO — replace these placeholders (Ctrl/Cmd+F each one):
+    • YOUR_PORTFOLIO  → your portfolio URL (or delete that badge)
+    • RESUME_LINK     → a raw link to your hosted resume PDF
     • REPO_RESUME_AI / REPO_ORB / REPO_HACKATHON → project repo URLs
-  NOTE: This file lives at github.com/YOUR_GITHUB_USERNAME/YOUR_GITHUB_USERNAME/README.md
-        (a repo named exactly like your username) for it to show on your profile.
+  NOTE: This file must live at github.com/AyushChangedia/AyushChangedia/README.md
+        (a repo named exactly like your username) to show on your profile.
 ====================================================================================
 -->
 
@@ -25,38 +24,32 @@
 
 </div>
 
-<!-- ========================= 📊 LIVE STAT BADGES ========================= -->
+<!-- ========================= ⚡ STATUS STRIP + QUICK LINKS ========================= -->
 <div align="center">
 
-<!-- Profile Views (komarev) -->
-<img src="https://komarev.com/ghpvc/?username=YOUR_GITHUB_USERNAME&label=Profile%20Views&color=6EE7F9&style=for-the-badge" alt="Profile views"/>
-<!-- Followers -->
-<a href="https://github.com/YOUR_GITHUB_USERNAME?tab=followers">
-  <img src="https://img.shields.io/github/followers/YOUR_GITHUB_USERNAME?label=Followers&style=for-the-badge&color=8B5CF6&logo=github&logoColor=white" alt="Followers"/>
-</a>
-<!-- Stars -->
-<a href="https://github.com/YOUR_GITHUB_USERNAME?tab=repositories">
-  <img src="https://img.shields.io/github/stars/YOUR_GITHUB_USERNAME?label=Stars&style=for-the-badge&color=F59E0B&logo=github&logoColor=white" alt="Stars"/>
-</a>
+<img src="https://img.shields.io/badge/📍%20Pune,%20India-0D1117?style=for-the-badge&labelColor=0D1117" alt="Location"/>
+&nbsp;
+<img src="https://img.shields.io/badge/⚡%20Open%20to%20Internships%20%26%20Collabs-22C55E?style=for-the-badge&labelColor=0D1117" alt="Status"/>
+&nbsp;
+<img src="https://img.shields.io/badge/🤖%20AI%20%C3%97%20Backend-6E56CF?style=for-the-badge&labelColor=0D1117" alt="Focus"/>
 
-</div>
+<br/><br/>
 
-<!-- ========================= 🔗 SOCIAL / CONTACT BADGES ========================= -->
-<div align="center">
-
-<a href="https://linkedin.com/in/YOUR_LINKEDIN_USERNAME">
-  <img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
+<a href="https://github.com/AyushChangedia">
+  <img src="https://img.shields.io/badge/GitHub-0D1117?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
 </a>
+&nbsp;
 <a href="mailto:ayushc7711@gmail.com">
-  <img src="https://img.shields.io/badge/Email-ayushc7711-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
+  <img src="https://img.shields.io/badge/Email-0D1117?style=for-the-badge&logo=gmail&logoColor=EA4335" alt="Email"/>
 </a>
+&nbsp;
 <a href="YOUR_PORTFOLIO">
-  <img src="https://img.shields.io/badge/Portfolio-Visit-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio"/>
+  <img src="https://img.shields.io/badge/Portfolio-0D1117?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio"/>
 </a>
+&nbsp;
 <a href="RESUME_LINK">
-  <img src="https://img.shields.io/badge/Resume-Download-22C55E?style=for-the-badge&logo=readdotcv&logoColor=white" alt="Resume"/>
+  <img src="https://img.shields.io/badge/Résumé-0D1117?style=for-the-badge&logo=readdotcv&logoColor=22C55E" alt="Résumé"/>
 </a>
-<img src="https://img.shields.io/badge/Pune,%20India-📍-EF4444?style=for-the-badge&logoColor=white" alt="Location"/>
 
 </div>
 
@@ -275,29 +268,9 @@ Off the clock, I automate my own hobbies too — my **ORB Strategy Backtester** 
 <!-- ========================= ✂️ DIVIDER ========================= -->
 <img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6,11,20&height=3" alt="divider"/>
 
-<!-- ========================= 📈 GITHUB STATS ========================= -->
-## <img src="https://media.giphy.com/media/dWesBcTLavkZuG35MI/giphy.gif" width="28"> &nbsp;GitHub Stats
-
-<div align="center">
-
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=YOUR_GITHUB_USERNAME&show_icons=true&count_private=true&hide_border=true&title_color=6EE7F9&icon_color=8B5CF6&text_color=c9d1d9&bg_color=0d1117" alt="GitHub Stats"/>
-<img height="165" src="https://github-readme-streak-stats.herokuapp.com/?user=YOUR_GITHUB_USERNAME&hide_border=true&background=0d1117&stroke=6EE7F9&ring=8B5CF6&fire=F59E0B&currStreakLabel=6EE7F9&sideLabels=c9d1d9&dates=8b949e&currStreakNum=ffffff&sideNums=ffffff" alt="GitHub Streak"/>
-
-<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=YOUR_GITHUB_USERNAME&layout=compact&hide_border=true&langs_count=8&title_color=6EE7F9&text_color=c9d1d9&bg_color=0d1117" alt="Top Languages"/>
-
-<br/><br/>
-
-<!-- Contribution Activity Graph -->
-<img width="98%" src="https://github-readme-activity-graph.vercel.app/graph?username=YOUR_GITHUB_USERNAME&bg_color=0d1117&color=6EE7F9&line=8B5CF6&point=ffffff&area=true&hide_border=true" alt="Activity Graph"/>
-
-<br/><br/>
-
-<!-- 🏆 Trophies -->
-<img width="98%" src="https://github-profile-trophy.vercel.app/?username=YOUR_GITHUB_USERNAME&theme=algolia&no-frame=true&no-bg=true&margin-w=6&column=7" alt="GitHub Trophies"/>
-
-</div>
-
 <!-- ========================= 🐍 SNAKE ANIMATION ========================= -->
+## <img src="https://media.giphy.com/media/dWesBcTLavkZuG35MI/giphy.gif" width="28"> &nbsp;Watch the Snake Eat My Commits
+
 <!--
   To make the snake move, add the workflow at .github/workflows/snake.yml
   (included in this repo). It auto-generates the SVG on a schedule/push.
@@ -305,9 +278,9 @@ Off the clock, I automate my own hobbies too — my **ORB Strategy Backtester** 
 <div align="center">
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/YOUR_GITHUB_USERNAME/YOUR_GITHUB_USERNAME/output/github-contribution-grid-snake-dark.svg"/>
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/YOUR_GITHUB_USERNAME/YOUR_GITHUB_USERNAME/output/github-contribution-grid-snake.svg"/>
-  <img alt="snake eating my contributions" src="https://raw.githubusercontent.com/YOUR_GITHUB_USERNAME/YOUR_GITHUB_USERNAME/output/github-contribution-grid-snake.svg"/>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AyushChangedia/AyushChangedia/output/github-contribution-grid-snake-dark.svg"/>
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/AyushChangedia/AyushChangedia/output/github-contribution-grid-snake.svg"/>
+  <img alt="snake eating my contributions" src="https://raw.githubusercontent.com/AyushChangedia/AyushChangedia/output/github-contribution-grid-snake.svg"/>
 </picture>
 
 </div>
@@ -345,15 +318,29 @@ class Ayush:
 <!-- ========================= 🎯 CURRENT FOCUS ========================= -->
 ## <img src="https://media.giphy.com/media/hpXdHPfFI5wPjEmvIw/giphy.gif" width="28"> &nbsp;Currently Leveling Up
 
-```markdown
-[✓] LLM Engineering & prompt-driven pipelines
-[✓] Backend systems with FastAPI + Node.js
-[▓] AI Agents & tool-calling workflows      ▓▓▓▓▓▓▓░░░  70%
-[▓] Retrieval-Augmented Generation (RAG)    ▓▓▓▓▓▓░░░░  60%
-[▓] System Design & scalable architecture   ▓▓▓▓▓░░░░░  50%
-[ ] Cloud & Distributed Systems             ▓▓▓░░░░░░░  35%
-[ ] Contributing to Open Source             ▓▓░░░░░░░░  20%
-```
+<div align="center">
+
+<sub><b>✅ Already in my toolkit</b></sub>
+
+![LLM Engineering](https://img.shields.io/badge/✓%20LLM%20Engineering-22C55E?style=for-the-badge&labelColor=0D1117)
+&nbsp;
+![Backend Systems](https://img.shields.io/badge/✓%20Backend%20Systems-22C55E?style=for-the-badge&labelColor=0D1117)
+
+<br/>
+
+<sub><b>🚀 What I'm exploring next</b></sub>
+
+![AI Agents](https://img.shields.io/badge/🤖%20AI%20Agents%20%26%20Tool%20Calling-6E56CF?style=for-the-badge&labelColor=0D1117)
+&nbsp;
+![RAG](https://img.shields.io/badge/📚%20RAG-0EA5E9?style=for-the-badge&labelColor=0D1117)
+&nbsp;
+![System Design](https://img.shields.io/badge/🏗️%20System%20Design-F59E0B?style=for-the-badge&labelColor=0D1117)
+
+![Cloud](https://img.shields.io/badge/☁️%20Cloud%20%26%20Distributed%20Systems-3B82F6?style=for-the-badge&labelColor=0D1117)
+&nbsp;
+![Open Source](https://img.shields.io/badge/🌱%20Open%20Source-EC4899?style=for-the-badge&labelColor=0D1117)
+
+</div>
 
 <!-- ========================= ✂️ DIVIDER ========================= -->
 <img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6,11,20&height=3" alt="divider"/>
@@ -379,8 +366,8 @@ I'm always up for a good problem — internships, collabs, or a chat about AI, b
 <a href="mailto:ayushc7711@gmail.com">
   <img src="https://img.shields.io/badge/Say%20Hi-ayushc7711@gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
 </a>
-<a href="https://linkedin.com/in/YOUR_LINKEDIN_USERNAME">
-  <img src="https://img.shields.io/badge/Let's%20Connect-LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
+<a href="https://github.com/AyushChangedia">
+  <img src="https://img.shields.io/badge/Follow-@AyushChangedia-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
 </a>
 
 </div>
@@ -389,5 +376,5 @@ I'm always up for a good problem — internships, collabs, or a chat about AI, b
 <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=150&section=footer&text=Thanks%20for%20scrolling!%20%E2%9C%A8&fontSize=22&fontColor=ffffff&fontAlignY=70&animation=fadeIn" alt="footer"/>
 
 <div align="center">
-  <sub>⭐ From <a href="https://github.com/YOUR_GITHUB_USERNAME">Ayush Changedia</a> — built with too much coffee and just enough sleep.</sub>
+  <sub>⭐ From <a href="https://github.com/AyushChangedia">Ayush Changedia</a> — built with too much coffee and just enough sleep.</sub>
 </div>
