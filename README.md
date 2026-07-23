@@ -24,32 +24,34 @@
 
 </div>
 
-<!-- ========================= ⚡ STATUS STRIP + QUICK LINKS ========================= -->
+<!-- ========================= 🔥 IMPACT SNAPSHOT + QUICK LINKS ========================= -->
 <div align="center">
 
-<img src="https://img.shields.io/badge/📍%20Pune,%20India-0D1117?style=for-the-badge&labelColor=0D1117" alt="Location"/>
-&nbsp;
-<img src="https://img.shields.io/badge/⚡%20Open%20to%20Internships%20%26%20Collabs-22C55E?style=for-the-badge&labelColor=0D1117" alt="Status"/>
-&nbsp;
-<img src="https://img.shields.io/badge/🤖%20AI%20%C3%97%20Backend-6E56CF?style=for-the-badge&labelColor=0D1117" alt="Focus"/>
+<sub>— &nbsp; <b>THE 10-SECOND VERSION</b> &nbsp; —</sub>
 
 <br/><br/>
 
-<a href="https://github.com/AyushChangedia">
-  <img src="https://img.shields.io/badge/GitHub-0D1117?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
-</a>
+<img src="https://img.shields.io/badge/3%C3%97%20INTERNSHIPS-AI%20%E2%80%A2%20Backend%20%E2%80%A2%20Data-6E56CF?style=for-the-badge&labelColor=0D1117" alt="3 internships"/>
 &nbsp;
-<a href="mailto:ayushc7711@gmail.com">
-  <img src="https://img.shields.io/badge/Email-0D1117?style=for-the-badge&logo=gmail&logoColor=EA4335" alt="Email"/>
-</a>
+<img src="https://img.shields.io/badge/TOP%201%25-1%20of%207%20%E2%80%A2%20720%2B%20applied-F59E0B?style=for-the-badge&labelColor=0D1117" alt="Top 1 percent"/>
+<br/>
+<img src="https://img.shields.io/badge/TRADING%20BOT-57.5%25%20win%20rate%20%E2%80%A2%20120%20trades-22C55E?style=for-the-badge&labelColor=0D1117" alt="57.5% win rate"/>
 &nbsp;
-<a href="YOUR_PORTFOLIO">
-  <img src="https://img.shields.io/badge/Portfolio-0D1117?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio"/>
-</a>
+<img src="https://img.shields.io/badge/HACKERRANK-4%C3%97%20certified-0EA5E9?style=for-the-badge&labelColor=0D1117" alt="HackerRank certified"/>
+
+<br/><br/>
+
+<a href="https://github.com/AyushChangedia"><img src="https://img.shields.io/badge/GitHub-0D1117?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/></a>
 &nbsp;
-<a href="RESUME_LINK">
-  <img src="https://img.shields.io/badge/Résumé-0D1117?style=for-the-badge&logo=readdotcv&logoColor=22C55E" alt="Résumé"/>
-</a>
+<a href="mailto:ayushc7711@gmail.com"><img src="https://img.shields.io/badge/Email-0D1117?style=for-the-badge&logo=gmail&logoColor=EA4335" alt="Email"/></a>
+&nbsp;
+<a href="YOUR_PORTFOLIO"><img src="https://img.shields.io/badge/Portfolio-0D1117?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio"/></a>
+&nbsp;
+<a href="RESUME_LINK"><img src="https://img.shields.io/badge/Résumé-0D1117?style=for-the-badge&logo=readdotcv&logoColor=22C55E" alt="Résumé"/></a>
+
+<br/><br/>
+
+<sub>📍 Pune, India &nbsp;·&nbsp; ⚡ Open to Internships &amp; Collabs &nbsp;·&nbsp; 🤖 AI × Backend</sub>
 
 </div>
 
@@ -269,8 +271,6 @@ Off the clock, I automate my own hobbies too — my **ORB Strategy Backtester** 
 <img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6,11,20&height=3" alt="divider"/>
 
 <!-- ========================= 🐍 SNAKE ANIMATION ========================= -->
-## <img src="https://media.giphy.com/media/dWesBcTLavkZuG35MI/giphy.gif" width="28"> &nbsp;Watch the Snake Eat My Commits
-
 <!--
   To make the snake move, add the workflow at .github/workflows/snake.yml
   (included in this repo). It auto-generates the SVG on a schedule/push.
