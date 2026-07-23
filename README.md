@@ -4,7 +4,7 @@
   ------------------------------------------------------------------------------------
   GitHub username is already set to: AyushChangedia
   STILL TODO — replace these placeholders (Ctrl/Cmd+F each one):
-    • REPO_RESUME_AI / REPO_ORB / REPO_HACKATHON → project repo URLs
+    • REPO_ORB / REPO_HACKATHON → project repo URLs (Résumé Roaster is linked)
   (Résumé is committed at ./Ayush_Changedia_Resume.pdf and already linked.)
   (Portfolio site lives in /docs — enable GitHub Pages to serve it at
    https://ayushchangedia.github.io/AyushChangedia/ )
@@ -179,20 +179,19 @@ Off the clock, I automate my own hobbies too — my **ORB Strategy Backtester** 
 <tr>
 <td width="50%" valign="top">
 
-### 🤖 Résumé Screening AI
-> LLM-powered first-round shortlisting, minus the human fatigue.
+### 🔥 Résumé Roaster
+> Feed it a résumé, get back an honest LLM roast — strengths, weak spots, and the buzzwords worth cutting.
 
-**Stack:** `Python` · `FastAPI` · `OpenAI APIs`
+**Stack:** `Python` · `OpenAI APIs` · `LLMs`
 
 **Highlights**
-- Parses & ranks candidate résumés with an LLM scoring pipeline
-- Exposes a clean FastAPI service recruiters can hit programmatically
-- Automates the tedious first pass of hiring
+- Analyzes a résumé end-to-end with an LLM feedback pipeline
+- Calls out fluff and thin bullets, then suggests sharper rewrites
+- Honest, actionable feedback instead of "looks fine to me"
 
-**Impact:** Cuts manual first-round screening to near-zero.
+**Impact:** Turns vague self-review into blunt, useful critique.
 
-<!-- Replace REPO_RESUME_AI with the repo URL -->
-[![Repo](https://img.shields.io/badge/View%20Repo-181717?style=for-the-badge&logo=github&logoColor=white)](REPO_RESUME_AI)
+[![Repo](https://img.shields.io/badge/View%20Repo-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/AyushChangedia/resume-roaster)
 
 </td>
 <td width="50%" valign="top">
