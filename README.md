@@ -4,9 +4,10 @@
   ------------------------------------------------------------------------------------
   GitHub username is already set to: AyushChangedia
   STILL TODO — replace these placeholders (Ctrl/Cmd+F each one):
-    • YOUR_PORTFOLIO  → your portfolio URL (or delete that badge)
     • REPO_RESUME_AI / REPO_ORB / REPO_HACKATHON → project repo URLs
   (Résumé is committed at ./Ayush_Changedia_Resume.pdf and already linked.)
+  (Portfolio site lives in /docs — enable GitHub Pages to serve it at
+   https://ayushchangedia.github.io/AyushChangedia/ )
   NOTE: This file must live at github.com/AyushChangedia/AyushChangedia/README.md
         (a repo named exactly like your username) to show on your profile.
 ====================================================================================
@@ -55,7 +56,7 @@
 &nbsp;
 <a href="mailto:ayushc7711@gmail.com"><img src="https://img.shields.io/badge/Email-0D1117?style=for-the-badge&logo=gmail&logoColor=EA4335" alt="Email"/></a>
 &nbsp;
-<a href="YOUR_PORTFOLIO"><img src="https://img.shields.io/badge/Portfolio-0D1117?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio"/></a>
+<a href="https://ayushchangedia.github.io/AyushChangedia/"><img src="https://img.shields.io/badge/Portfolio-0D1117?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio"/></a>
 &nbsp;
 <a href="./Ayush_Changedia_Resume.pdf"><img src="https://img.shields.io/badge/Résumé-0D1117?style=for-the-badge&logo=readdotcv&logoColor=22C55E" alt="Résumé"/></a>
 

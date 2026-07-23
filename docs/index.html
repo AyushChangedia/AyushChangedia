@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Ayush Changedia · AI Engineer & Backend Developer</title>
+<meta name="description" content="Ayush Changedia — AI Engineer & Backend Developer. LLM systems, scalable APIs, and trading automation."/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet"/>
+<style>
+:root{
+  --bg:#07070c; --bg2:#0c0c15; --card:rgba(255,255,255,.03); --line:rgba(255,255,255,.09);
+  --txt:#e8e9f0; --muted:#9297a8; --dim:#6b7080;
+  --indigo:#6366f1; --violet:#a855f7; --cyan:#22d3ee; --emerald:#34d399; --amber:#fbbf24; --coral:#f97362;
+  --grad:linear-gradient(135deg,#6366f1 0%,#a855f7 50%,#22d3ee 100%);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--txt);
+  line-height:1.6;overflow-x:hidden;-webkit-font-smoothing:antialiased;
+}
+/* animated aurora background */
+.bg-fx{position:fixed;inset:0;z-index:-2;overflow:hidden}
+.blob{position:absolute;border-radius:50%;filter:blur(90px);opacity:.35;animation:float 18s ease-in-out infinite}
+.b1{width:520px;height:520px;background:#6366f1;top:-120px;left:-80px}
+.b2{width:460px;height:460px;background:#a855f7;top:30%;right:-120px;animation-delay:-6s}
+.b3{width:420px;height:420px;background:#22d3ee;bottom:-140px;left:25%;animation-delay:-11s}
+@keyframes float{0%,100%{transform:translate(0,0) scale(1)}33%{transform:translate(40px,-50px) scale(1.1)}66%{transform:translate(-30px,40px) scale(.95)}}
+.grid-fx{position:fixed;inset:0;z-index:-1;
+  background-image:linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);
+  background-size:44px 44px;mask-image:radial-gradient(ellipse 80% 60% at 50% 0%,#000 40%,transparent 100%)}
+/* cursor glow */
+#glow{position:fixed;width:400px;height:400px;border-radius:50%;pointer-events:none;z-index:0;
+  background:radial-gradient(circle,rgba(99,102,241,.10),transparent 60%);transform:translate(-50%,-50%);transition:opacity .3s;opacity:0}
+
+/* nav */
+nav{position:fixed;top:0;left:0;right:0;z-index:50;display:flex;align-items:center;justify-content:space-between;
+  padding:18px clamp(20px,5vw,64px);backdrop-filter:blur(12px);background:rgba(7,7,12,.55);border-bottom:1px solid transparent;transition:.3s}
+nav.scrolled{border-bottom:1px solid var(--line);background:rgba(7,7,12,.8)}
+.logo{font-family:'Space Grotesk';font-weight:700;font-size:19px;letter-spacing:-.5px;text-decoration:none;color:var(--txt)}
+.logo span{background:var(--grad);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.nav-links{display:flex;gap:30px;align-items:center}
+.nav-links a{color:var(--muted);text-decoration:none;font-size:14.5px;font-weight:500;transition:.2s;position:relative}
+.nav-links a:hover{color:var(--txt)}
+.nav-links a::after{content:'';position:absolute;left:0;bottom:-5px;width:0;height:2px;background:var(--grad);transition:.25s;border-radius:2px}
+.nav-links a:hover::after{width:100%}
+.nav-cta{padding:8px 18px;border:1px solid var(--line);border-radius:999px;background:rgba(255,255,255,.04)}
+.nav-cta:hover{border-color:var(--indigo);box-shadow:0 0 20px rgba(99,102,241,.3)}
+.menu-btn{display:none;background:none;border:none;color:var(--txt);font-size:24px;cursor:pointer}
+@media(max-width:760px){.nav-links{display:none}.menu-btn{display:block}}
+
+/* layout */
+section{max-width:1080px;margin:0 auto;padding:clamp(70px,10vw,120px) clamp(20px,5vw,40px)}
+.eyebrow{font-family:'JetBrains Mono';font-size:13px;letter-spacing:2px;text-transform:uppercase;color:var(--cyan);margin-bottom:14px;display:flex;align-items:center;gap:10px}
+.eyebrow::before{content:'';width:28px;height:1px;background:var(--cyan)}
+h2.title{font-family:'Space Grotesk';font-size:clamp(30px,5vw,44px);font-weight:700;letter-spacing:-1px;margin-bottom:14px}
+
+/* hero */
+.hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;max-width:1080px;margin:0 auto;padding:0 clamp(20px,5vw,40px);position:relative}
+.hero-badge{display:inline-flex;align-items:center;gap:9px;padding:7px 16px;border:1px solid var(--line);border-radius:999px;
+  background:rgba(52,211,153,.07);font-size:13.5px;color:var(--muted);width:fit-content;margin-bottom:26px}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--emerald);box-shadow:0 0 10px var(--emerald);animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
+.hero h1{font-family:'Space Grotesk';font-size:clamp(44px,9vw,92px);font-weight:700;line-height:1;letter-spacing:-3px;margin-bottom:18px}
+.hero h1 .g{background:var(--grad);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.type-wrap{font-family:'JetBrains Mono';font-size:clamp(16px,3vw,24px);color:var(--muted);height:34px;margin-bottom:24px}
+#typed{color:var(--txt)}.cursor{display:inline-block;width:9px;height:22px;background:var(--cyan);margin-left:3px;vertical-align:middle;animation:blink 1s steps(2) infinite}
+@keyframes blink{0%,50%{opacity:1}51%,100%{opacity:0}}
+.hero p.lede{font-size:clamp(16px,2.4vw,19px);color:var(--muted);max-width:600px;margin-bottom:36px}
+.hero p.lede b{color:var(--txt);font-weight:600}
+.cta-row{display:flex;gap:14px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:9px;padding:13px 24px;border-radius:12px;font-weight:600;font-size:14.5px;text-decoration:none;transition:.25s;border:1px solid transparent}
+.btn-primary{background:var(--grad);color:#fff;background-size:200% 200%}
+.btn-primary:hover{background-position:100% 0;transform:translateY(-2px);box-shadow:0 12px 34px rgba(99,102,241,.4)}
+.btn-ghost{border-color:var(--line);color:var(--txt);background:rgba(255,255,255,.03)}
+.btn-ghost:hover{border-color:var(--violet);transform:translateY(-2px);box-shadow:0 10px 30px rgba(168,85,247,.22)}
+.scroll-hint{position:absolute;bottom:34px;left:50%;transform:translateX(-50%);color:var(--dim);font-size:12px;font-family:'JetBrains Mono';letter-spacing:2px;display:flex;flex-direction:column;align-items:center;gap:8px}
+.scroll-hint .mouse{width:22px;height:34px;border:2px solid var(--line);border-radius:12px;position:relative}
+.scroll-hint .mouse::before{content:'';position:absolute;top:7px;left:50%;transform:translateX(-50%);width:3px;height:7px;background:var(--cyan);border-radius:2px;animation:scroll 1.6s infinite}
+@keyframes scroll{0%{opacity:1;top:7px}100%{opacity:0;top:16px}}
+
+/* stats */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:20px}
+@media(max-width:680px){.stats{grid-template-columns:repeat(2,1fr)}}
+.stat{padding:24px 20px;border:1px solid var(--line);border-radius:16px;background:var(--card);text-align:center;transition:.3s}
+.stat:hover{transform:translateY(-4px);border-color:var(--indigo);background:rgba(99,102,241,.06)}
+.stat .n{font-family:'Space Grotesk';font-size:clamp(26px,4vw,38px);font-weight:700;background:var(--grad);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.stat .l{font-size:12.5px;color:var(--muted);margin-top:6px;letter-spacing:.3px}
+
+/* about */
+.about-grid{display:grid;grid-template-columns:1.4fr 1fr;gap:44px;align-items:start}
+@media(max-width:820px){.about-grid{grid-template-columns:1fr;gap:28px}}
+.about p{color:var(--muted);font-size:16.5px;margin-bottom:16px}
+.about p b{color:var(--txt)}
+.about-card{border:1px solid var(--line);border-radius:18px;background:var(--card);padding:26px;position:sticky;top:100px}
+.about-card .row{display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid var(--line);font-size:14.5px}
+.about-card .row:last-child{border-bottom:none}
+.about-card .k{color:var(--dim)}.about-card .v{color:var(--txt);font-weight:500;text-align:right}
+
+/* timeline */
+.timeline{position:relative;margin-left:8px}
+.timeline::before{content:'';position:absolute;left:0;top:8px;bottom:8px;width:2px;background:linear-gradient(var(--indigo),var(--violet),var(--cyan))}
+.tl-item{position:relative;padding-left:34px;padding-bottom:34px}
+.tl-item:last-child{padding-bottom:0}
+.tl-item::before{content:'';position:absolute;left:-6px;top:5px;width:14px;height:14px;border-radius:50%;background:var(--bg);border:2px solid var(--violet);box-shadow:0 0 0 4px rgba(168,85,247,.12)}
+.tl-item .when{font-family:'JetBrains Mono';font-size:12.5px;color:var(--cyan);letter-spacing:.5px}
+.tl-item h3{font-family:'Space Grotesk';font-size:19px;font-weight:600;margin:5px 0 2px}
+.tl-item .co{color:var(--violet);font-size:14.5px;font-weight:500;margin-bottom:9px}
+.tl-item p{color:var(--muted);font-size:15px;margin-bottom:6px}
+.tl-item .tags{display:flex;gap:7px;flex-wrap:wrap;margin-top:11px}
+.tag{font-size:11.5px;font-family:'JetBrains Mono';padding:4px 11px;border-radius:999px;border:1px solid var(--line);color:var(--muted);background:rgba(255,255,255,.02)}
+
+/* projects */
+.proj-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+@media(max-width:760px){.proj-grid{grid-template-columns:1fr}}
+.proj{border:1px solid var(--line);border-radius:18px;background:var(--card);padding:28px;transition:.3s;position:relative;overflow:hidden}
+.proj::before{content:'';position:absolute;inset:0;background:var(--grad);opacity:0;transition:.3s;z-index:-1}
+.proj:hover{transform:translateY(-6px);border-color:transparent;box-shadow:0 20px 50px rgba(0,0,0,.5)}
+.proj:hover::after{opacity:.5}
+.proj::after{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:var(--grad);opacity:0;transition:.3s}
+.proj .pi{font-size:26px;margin-bottom:14px;display:inline-flex;width:52px;height:52px;align-items:center;justify-content:center;border-radius:13px;background:rgba(99,102,241,.1);border:1px solid var(--line)}
+.proj h3{font-family:'Space Grotesk';font-size:20px;font-weight:600;margin-bottom:8px}
+.proj .desc{color:var(--muted);font-size:14.5px;margin-bottom:14px}
+.proj .metric{display:inline-block;font-family:'JetBrains Mono';font-size:12.5px;color:var(--emerald);background:rgba(52,211,153,.08);border:1px solid rgba(52,211,153,.2);padding:4px 11px;border-radius:8px;margin-bottom:14px}
+.proj .tags{display:flex;gap:7px;flex-wrap:wrap}
+
+/* skills */
+.skill-cat{margin-bottom:24px}
+.skill-cat h4{font-family:'JetBrains Mono';font-size:13px;color:var(--dim);text-transform:uppercase;letter-spacing:1.5px;margin-bottom:12px}
+.chips{display:flex;gap:10px;flex-wrap:wrap}
+.chip{padding:9px 16px;border:1px solid var(--line);border-radius:11px;background:var(--card);font-size:14px;font-weight:500;transition:.2s;cursor:default}
+.chip:hover{transform:translateY(-3px);border-color:var(--indigo);color:#fff;background:rgba(99,102,241,.12);box-shadow:0 8px 22px rgba(99,102,241,.2)}
+
+/* achievements */
+.ach-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+@media(max-width:680px){.ach-grid{grid-template-columns:1fr}}
+.ach{display:flex;gap:15px;align-items:flex-start;padding:20px;border:1px solid var(--line);border-radius:15px;background:var(--card);transition:.25s}
+.ach:hover{transform:translateY(-3px);border-color:var(--amber);background:rgba(251,191,36,.05)}
+.ach .ic{font-size:22px;flex-shrink:0}
+.ach h4{font-size:15.5px;font-weight:600;margin-bottom:3px}
+.ach p{font-size:13.5px;color:var(--muted)}
+
+/* contact */
+.contact{text-align:center}
+.contact h2{font-family:'Space Grotesk';font-size:clamp(32px,6vw,56px);font-weight:700;letter-spacing:-2px;margin-bottom:16px}
+.contact h2 span{background:var(--grad);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.contact p{color:var(--muted);max-width:520px;margin:0 auto 32px;font-size:17px}
+.contact .cta-row{justify-content:center}
+footer{border-top:1px solid var(--line);text-align:center;padding:34px 20px;color:var(--dim);font-size:13.5px}
+footer .socials{display:flex;gap:20px;justify-content:center;margin-bottom:16px}
+footer .socials a{color:var(--muted);text-decoration:none;font-size:14px;transition:.2s}
+footer .socials a:hover{color:var(--cyan)}
+
+/* reveal */
+.reveal{opacity:0;transform:translateY(28px);transition:.7s cubic-bezier(.2,.7,.2,1)}
+.reveal.in{opacity:1;transform:none}
+::selection{background:rgba(168,85,247,.35)}
+::-webkit-scrollbar{width:11px}::-webkit-scrollbar-track{background:var(--bg)}
+::-webkit-scrollbar-thumb{background:#26263a;border-radius:6px;border:3px solid var(--bg)}::-webkit-scrollbar-thumb:hover{background:#33334d}
+</style>
+</head>
+<body>
+<div class="bg-fx"><div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div></div>
+<div class="grid-fx"></div>
+<div id="glow"></div>
+
+<nav id="nav">
+  <a href="#top" class="logo">Ayush<span>.</span>Changedia</a>
+  <div class="nav-links">
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+    <a href="./Ayush_Changedia_Resume.pdf" class="nav-cta">Résumé ↗</a>
+  </div>
+  <button class="menu-btn" onclick="document.querySelector('.nav-links').style.display= (getComputedStyle(document.querySelector('.nav-links')).display==='none'?'flex':'none')">☰</button>
+</nav>
+
+<!-- HERO -->
+<header class="hero" id="top">
+  <div class="hero-badge reveal"><span class="dot"></span> Open to Internships &amp; Collaborations</div>
+  <h1 class="reveal">Hi, I'm <span class="g">Ayush</span>.</h1>
+  <div class="type-wrap reveal"><span id="typed"></span><span class="cursor"></span></div>
+  <p class="lede reveal">I build <b>AI systems</b>, <b>backend applications</b>, and <b>automation</b> that save humans from repetitive work — from LLM-powered tools to scalable APIs and trading bots that backtest while I sleep.</p>
+  <div class="cta-row reveal">
+    <a href="#projects" class="btn btn-primary">View My Work →</a>
+    <a href="./Ayush_Changedia_Resume.pdf" class="btn btn-ghost">⬇ Download Résumé</a>
+    <a href="https://github.com/AyushChangedia" class="btn btn-ghost">GitHub</a>
+    <a href="mailto:ayushc7711@gmail.com" class="btn btn-ghost">Email</a>
+  </div>
+  <div class="stats reveal" style="margin-top:56px">
+    <div class="stat"><div class="n">3×</div><div class="l">Internships</div></div>
+    <div class="stat"><div class="n">Top 1%</div><div class="l">of 720+ applicants</div></div>
+    <div class="stat"><div class="n">57.5%</div><div class="l">Trading-bot win rate</div></div>
+    <div class="stat"><div class="n">8.2</div><div class="l">CGPA / 10</div></div>
+  </div>
+  <div class="scroll-hint"><div class="mouse"></div>SCROLL</div>
+</header>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="eyebrow reveal">01 — About</div>
+  <div class="about-grid">
+    <div class="about reveal">
+      <h2 class="title">Turning curiosity into shipped software.</h2>
+      <p>I'm a Computer Science student at <b>MIT World Peace University</b> who got a little too curious about <i>why</i> software has to be repetitive — and never really recovered.</p>
+      <p>Three internships later, that curiosity has a shape: I built an <b>LLM-powered résumé-screening tool</b> with Python, FastAPI &amp; OpenAI APIs; shipped scalable <b>Node.js / Express / PostgreSQL</b> REST APIs for product, order &amp; payment flows; and turned messy marketing data into <b>Power BI</b> dashboards people actually make decisions with.</p>
+      <p>Off the clock, I automate my own hobbies too — my <b>ORB Strategy Backtester</b> runs opening-range-breakout backtests on Bank Nifty futures through a custom TradingView MCP integration. When there's a hackathon in range, I'm probably in it, over-caffeinated, demoing something that <i>technically</i> works. ☕</p>
+    </div>
+    <div class="about-card reveal">
+      <div class="row"><span class="k">Name</span><span class="v">Ayush S. Changedia</span></div>
+      <div class="row"><span class="k">Role</span><span class="v">AI × Backend Dev</span></div>
+      <div class="row"><span class="k">Education</span><span class="v">B.Sc. CS · MIT-WPU</span></div>
+      <div class="row"><span class="k">CGPA</span><span class="v">8.2 / 10</span></div>
+      <div class="row"><span class="k">Location</span><span class="v">Pune, India 🇮🇳</span></div>
+      <div class="row"><span class="k">Focus</span><span class="v">LLMs · APIs · Automation</span></div>
+      <div class="row"><span class="k">Status</span><span class="v" style="color:#34d399">Available ●</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="eyebrow reveal">02 — Experience</div>
+  <h2 class="title reveal">Where I've built things.</h2>
+  <div class="timeline" style="margin-top:36px">
+    <div class="tl-item reveal">
+      <div class="when">MAY 2026 – JUN 2026</div>
+      <h3>AI Engineering Intern</h3>
+      <div class="co">NeuralForge Labs · Remote</div>
+      <p>Built an LLM-powered résumé-screening tool that automates first-round candidate shortlisting — parsing and ranking résumés through an OpenAI-driven scoring pipeline served over FastAPI.</p>
+      <div class="tags"><span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">OpenAI APIs</span><span class="tag">LLMs</span></div>
+    </div>
+    <div class="tl-item reveal">
+      <div class="when">APR 2026 – MAY 2026</div>
+      <h3>Software Development Intern</h3>
+      <div class="co">yteNest Technologies · Remote</div>
+      <p>Developed scalable REST APIs for product, order and payment workflows. Implemented JWT authentication, input validation and optimized SQL queries — improving API performance and security.</p>
+      <div class="tags"><span class="tag">Node.js</span><span class="tag">Express.js</span><span class="tag">PostgreSQL</span><span class="tag">JWT</span></div>
+    </div>
+    <div class="tl-item reveal">
+      <div class="when">JAN 2026 – MAR 2026</div>
+      <h3>Data Analytics Intern</h3>
+      <div class="co">Mindenious · Remote</div>
+      <p>Analyzed website, marketing and sales data and built dashboards tracking conversion rates, customer behaviour and campaign ROI — enabling data-driven marketing decisions.</p>
+      <div class="tags"><span class="tag">SQL</span><span class="tag">Power BI</span><span class="tag">Pandas</span><span class="tag">GA4</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="eyebrow reveal">03 — Projects</div>
+  <h2 class="title reveal">Things I've shipped.</h2>
+  <div class="proj-grid" style="margin-top:36px">
+    <div class="proj reveal">
+      <div class="pi">🤖</div>
+      <h3>Résumé Screening AI</h3>
+      <div class="desc">LLM-powered first-round shortlisting that reads and ranks candidate résumés so recruiters don't have to squint at hundreds of PDFs.</div>
+      <div class="metric">Automates first-round screening</div>
+      <div class="tags"><span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">OpenAI</span></div>
+    </div>
+    <div class="proj reveal">
+      <div class="pi">📈</div>
+      <h3>ORB Strategy Backtester</h3>
+      <div class="desc">Automated opening-range-breakout backtesting on Bank Nifty futures via a custom TradingView MCP integration, with a parameter-optimization loop that isolated commission drag as the #1 P&amp;L leak.</div>
+      <div class="metric">57.5% win rate · 120-trade backtest</div>
+      <div class="tags"><span class="tag">Python</span><span class="tag">Pine Script v5</span><span class="tag">TradingView MCP</span></div>
+    </div>
+    <div class="proj reveal">
+      <div class="pi">🔌</div>
+      <h3>Scalable Commerce APIs</h3>
+      <div class="desc">Production-style REST APIs covering product, order and payment flows — hardened with JWT auth, input validation and tuned SQL for fast, safe responses.</div>
+      <div class="metric">Improved performance &amp; security</div>
+      <div class="tags"><span class="tag">Node.js</span><span class="tag">Express</span><span class="tag">PostgreSQL</span></div>
+    </div>
+    <div class="proj reveal">
+      <div class="pi">⚡</div>
+      <h3>Hackathon Builds</h3>
+      <div class="desc">AI chatbots, an AI-based skill-assessment portal, and a smart energy-monitoring &amp; attendance system — scoped, built and demoed under real hackathon deadlines at HACK MIT-WPU &amp; Smart India Hackathon.</div>
+      <div class="metric">🥉 3rd place · 2025</div>
+      <div class="tags"><span class="tag">AI</span><span class="tag">IoT</span><span class="tag">Python</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="eyebrow reveal">04 — Skills</div>
+  <h2 class="title reveal">My toolkit.</h2>
+  <div style="margin-top:34px">
+    <div class="skill-cat reveal"><h4>Languages</h4><div class="chips">
+      <span class="chip">Python</span><span class="chip">C++</span><span class="chip">JavaScript</span><span class="chip">SQL</span><span class="chip">HTML / CSS</span></div></div>
+    <div class="skill-cat reveal"><h4>Backend &amp; APIs</h4><div class="chips">
+      <span class="chip">Node.js</span><span class="chip">Express.js</span><span class="chip">FastAPI</span><span class="chip">REST APIs</span><span class="chip">JWT Auth</span></div></div>
+    <div class="skill-cat reveal"><h4>AI / ML</h4><div class="chips">
+      <span class="chip">OpenAI / LLM APIs</span><span class="chip">NumPy</span><span class="chip">Pandas</span></div></div>
+    <div class="skill-cat reveal"><h4>Data &amp; Databases</h4><div class="chips">
+      <span class="chip">PostgreSQL</span><span class="chip">MySQL</span><span class="chip">Power BI</span><span class="chip">Google Analytics 4</span><span class="chip">Excel</span></div></div>
+    <div class="skill-cat reveal"><h4>Tools</h4><div class="chips">
+      <span class="chip">Git &amp; GitHub</span><span class="chip">TradingView (Pine)</span><span class="chip">jQuery</span></div></div>
+  </div>
+</section>
+
+<!-- ACHIEVEMENTS -->
+<section id="achievements">
+  <div class="eyebrow reveal">05 — Milestones</div>
+  <h2 class="title reveal">Wins along the way.</h2>
+  <div class="ach-grid" style="margin-top:34px">
+    <div class="ach reveal"><div class="ic">🏆</div><div><h4>Top 1% — Internshala Student Partner</h4><p>Selected as 1 of 7 partners from 720+ applicants; onboarded &amp; mentored 29 students.</p></div></div>
+    <div class="ach reveal"><div class="ic">🥉</div><div><h4>3rd Place — Hackathon 2025</h4><p>Podium finish in a competitive national-level build sprint.</p></div></div>
+    <div class="ach reveal"><div class="ic">🎓</div><div><h4>HackerRank Certified</h4><p>SQL (Advanced), SQL (Intermediate), Problem Solving &amp; Critical Thinking.</p></div></div>
+    <div class="ach reveal"><div class="ic">💼</div><div><h4>27 Deals Closed</h4><p>Owned full outreach-to-closure cycle across 12 client accounts in digital marketing.</p></div></div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+  <div class="eyebrow reveal" style="justify-content:center">06 — Contact</div>
+  <h2 class="reveal">Let's build something <span>worth shipping.</span></h2>
+  <p class="reveal">I'm always up for a good problem — internships, collaborations, or a chat about AI, backend, or why my trading bot thinks it's smarter than me.</p>
+  <div class="cta-row reveal">
+    <a href="mailto:ayushc7711@gmail.com" class="btn btn-primary">✉ Say Hello</a>
+    <a href="https://github.com/AyushChangedia" class="btn btn-ghost">GitHub</a>
+    <a href="./Ayush_Changedia_Resume.pdf" class="btn btn-ghost">Résumé</a>
+  </div>
+</section>
+
+<footer>
+  <div class="socials">
+    <a href="https://github.com/AyushChangedia">GitHub</a>
+    <a href="mailto:ayushc7711@gmail.com">Email</a>
+    <a href="./Ayush_Changedia_Resume.pdf">Résumé</a>
+  </div>
+  <div>© 2026 Ayush Changedia · Built with too much coffee and just enough sleep. ☕</div>
+</footer>
+
+<script>
+// typing effect
+const phrases=["AI Engineer 🤖","Backend Developer ⚙️","Automation Addict ⚡","Trading-Bot Builder 📈","LLM Tinkerer 🧠"];
+let pi=0,ci=0,del=false;const el=document.getElementById('typed');
+(function type(){const w=phrases[pi];el.textContent=del?w.slice(0,ci--):w.slice(0,ci++);
+  let s=del?45:90;if(!del&&ci===w.length+1){del=true;s=1400;}else if(del&&ci===0){del=false;pi=(pi+1)%phrases.length;s=250;}
+  setTimeout(type,s);})();
+// nav scroll
+const nav=document.getElementById('nav');addEventListener('scroll',()=>nav.classList.toggle('scrolled',scrollY>40));
+// reveal
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach((el,i)=>{el.style.transitionDelay=(i%6*60)+'ms';io.observe(el);});
+// cursor glow (desktop)
+const glow=document.getElementById('glow');
+if(matchMedia('(pointer:fine)').matches){addEventListener('mousemove',e=>{glow.style.opacity=1;glow.style.left=e.clientX+'px';glow.style.top=e.clientY+'px';});}
+</script>
+</body>
+</html>
