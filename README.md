@@ -24,22 +24,28 @@
 
 </div>
 
-<!-- ========================= 🔥 IMPACT SNAPSHOT + QUICK LINKS ========================= -->
+<!-- ========================= 💻 LIVE TERMINAL HERO ========================= -->
 <div align="center">
 
-<sub>— &nbsp; <b>THE 10-SECOND VERSION</b> &nbsp; —</sub>
+[![boot](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&pause=900&color=00FF9C&center=true&vCenter=true&width=680&height=45&lines=%3E+booting+ayush.exe+.+.+.;%3E+AI+systems+.......+online+%E2%9C%93;%3E+backend+APIs+......+online+%E2%9C%93;%3E+trading_bot+......+57.5%25+win+rate;%3E+status+..........+OPEN+TO+WORK+%F0%9F%9A%80)](#)
 
-<br/><br/>
+</div>
 
-<img src="https://img.shields.io/badge/3%C3%97%20INTERNSHIPS-AI%20%E2%80%A2%20Backend%20%E2%80%A2%20Data-6E56CF?style=for-the-badge&labelColor=0D1117" alt="3 internships"/>
-&nbsp;
-<img src="https://img.shields.io/badge/TOP%201%25-1%20of%207%20%E2%80%A2%20720%2B%20applied-F59E0B?style=for-the-badge&labelColor=0D1117" alt="Top 1 percent"/>
-<br/>
-<img src="https://img.shields.io/badge/TRADING%20BOT-57.5%25%20win%20rate%20%E2%80%A2%20120%20trades-22C55E?style=for-the-badge&labelColor=0D1117" alt="57.5% win rate"/>
-&nbsp;
-<img src="https://img.shields.io/badge/HACKERRANK-4%C3%97%20certified-0EA5E9?style=for-the-badge&labelColor=0D1117" alt="HackerRank certified"/>
+```ansi
+[92m╭─[0m  [1;95mayush@github[0m  [92m────────────────────────────────[0m
+[92m│[0m
+[92m│[0m   [1;36mrole       [0m  [97mAI Engineer  ×  Backend Developer[0m
+[92m│[0m   [1;36mlocation   [0m  [97mPune, India[0m  🇮🇳
+[92m│[0m   [1;36minternships[0m  [93m3×[0m  [90m·[0m  [97mAI · Backend · Data[0m
+[92m│[0m   [1;36mselectivity[0m  [93mTOP 1%[0m [97mof 720+[0m   [90m(1 of 7 chosen)[0m
+[92m│[0m   [1;36mtrading_bot[0m  [93m57.5% win rate[0m   [90m· 120-trade backtest[0m
+[92m│[0m   [1;36mcertified  [0m  [93m4×[0m [97mHackerRank[0m   [90m(SQL · Problem Solving)[0m
+[92m│[0m   [1;36mstatus     [0m  [1;92m⚡ OPEN TO INTERNSHIPS & COLLABS[0m
+[92m│[0m
+[92m╰────────────────────────────────────────────────[0m
+```
 
-<br/><br/>
+<div align="center">
 
 <a href="https://github.com/AyushChangedia"><img src="https://img.shields.io/badge/GitHub-0D1117?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/></a>
 &nbsp;
@@ -48,10 +54,6 @@
 <a href="YOUR_PORTFOLIO"><img src="https://img.shields.io/badge/Portfolio-0D1117?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio"/></a>
 &nbsp;
 <a href="RESUME_LINK"><img src="https://img.shields.io/badge/Résumé-0D1117?style=for-the-badge&logo=readdotcv&logoColor=22C55E" alt="Résumé"/></a>
-
-<br/><br/>
-
-<sub>📍 Pune, India &nbsp;·&nbsp; ⚡ Open to Internships &amp; Collabs &nbsp;·&nbsp; 🤖 AI × Backend</sub>
 
 </div>
 
