@@ -5,8 +5,8 @@
   GitHub username is already set to: AyushChangedia
   STILL TODO — replace these placeholders (Ctrl/Cmd+F each one):
     • YOUR_PORTFOLIO  → your portfolio URL (or delete that badge)
-    • RESUME_LINK     → a raw link to your hosted resume PDF
     • REPO_RESUME_AI / REPO_ORB / REPO_HACKATHON → project repo URLs
+  (Résumé is committed at ./Ayush_Changedia_Resume.pdf and already linked.)
   NOTE: This file must live at github.com/AyushChangedia/AyushChangedia/README.md
         (a repo named exactly like your username) to show on your profile.
 ====================================================================================
@@ -57,7 +57,7 @@
 &nbsp;
 <a href="YOUR_PORTFOLIO"><img src="https://img.shields.io/badge/Portfolio-0D1117?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio"/></a>
 &nbsp;
-<a href="RESUME_LINK"><img src="https://img.shields.io/badge/Résumé-0D1117?style=for-the-badge&logo=readdotcv&logoColor=22C55E" alt="Résumé"/></a>
+<a href="./Ayush_Changedia_Resume.pdf"><img src="https://img.shields.io/badge/Résumé-0D1117?style=for-the-badge&logo=readdotcv&logoColor=22C55E" alt="Résumé"/></a>
 
 </div>
 
@@ -288,6 +288,50 @@ Off the clock, I automate my own hobbies too — my **ORB Strategy Backtester** 
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/AyushChangedia/AyushChangedia/output/github-contribution-grid-snake.svg"/>
   <img alt="snake eating my contributions" src="https://raw.githubusercontent.com/AyushChangedia/AyushChangedia/output/github-contribution-grid-snake.svg"/>
 </picture>
+
+</div>
+
+<!-- ========================= ✂️ DIVIDER ========================= -->
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6,11,20&height=3" alt="divider"/>
+
+<!-- ========================= 🤖 CODING WITH CLAUDE ========================= -->
+## <img src="https://media.giphy.com/media/iY8CRBdQXODJSCERIr/giphy.gif" width="30"> &nbsp;I Build *With* Claude — Not Against It
+
+<div align="center">
+
+[![Claude philosophy](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&pause=1000&color=D97757&center=true&vCenter=true&width=760&height=50&lines=Ego+doesn't+ship.+Leverage+does.;I+don't+compete+with+AI+%E2%80%94+I+compound+with+it.;It's+2026%3A+code+WITH+Claude+or+get+left+behind.;Human+taste+%C3%97+Claude+speed+%3D+shipped.)](#)
+
+</div>
+
+> ### ⚡ It's 2026 — Claude Code exists.
+>
+> If you're still hand-cranking every single line, quietly telling yourself *"I don't need AI, I'm smart enough"* — here's the plot twist: you're not out in front. You're the one who got **left behind** and just hasn't refreshed the page yet. 🫠
+>
+> I don't *compete* with AI — I **compound** with it. I bring the taste, the architecture, and the *why*; Claude devours the boilerplate, the edge cases, and the 3 a.m. stack traces. Being "too smart to use Claude" isn't a flex in 2026 — it just means **shipping slower than the person who isn't.**
+>
+> **Ego doesn't ship. Leverage does.** 🚀
+
+<div align="center">
+
+<img src="https://img.shields.io/badge/🤝%20AI%20Pair%20Programming-6E56CF?style=for-the-badge&labelColor=0D1117" alt="AI Pair Programming"/>
+&nbsp;
+<img src="https://img.shields.io/badge/⚡%20Powered%20by%20Claude%20Code-D97757?style=for-the-badge&labelColor=0D1117&logo=anthropic&logoColor=white" alt="Claude Code"/>
+&nbsp;
+<img src="https://img.shields.io/badge/🚀%20Ship%2010%C3%97%20Faster-22C55E?style=for-the-badge&labelColor=0D1117" alt="Ship Faster"/>
+<br/>
+<img src="https://img.shields.io/badge/🧠%20Human%20Taste%20%2B%20AI%20Speed-0EA5E9?style=for-the-badge&labelColor=0D1117" alt="Human plus AI"/>
+&nbsp;
+<img src="https://img.shields.io/badge/📈%20Leverage%20%3E%20Ego-F59E0B?style=for-the-badge&labelColor=0D1117" alt="Leverage over Ego"/>
+
+<br/><br/>
+
+<table>
+<tr><th>🧠 The 2016 mindset</th><th>🚀 The 2026 mindset</th></tr>
+<tr><td>"I'll type every line myself."</td><td>"I direct — Claude drafts — we ship."</td></tr>
+<tr><td>Reinventing the wheel, slowly</td><td>Standing on giant robot shoulders</td></tr>
+<tr><td>Debugging alone at 3 a.m. 😵</td><td>Claude reads the traceback with me 🤖</td></tr>
+<tr><td>Ego-driven</td><td>Leverage-driven</td></tr>
+</table>
 
 </div>
 
