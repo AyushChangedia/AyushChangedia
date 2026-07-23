@@ -31,19 +31,23 @@
 
 </div>
 
-```
-╭─  ayush@github  ─────────────────────────────────────
-│
-│   role         AI Engineer  ×  Backend Developer
-│   location     Pune, India  🇮🇳
-│   internships  3×    ·   AI · Backend · Data
-│   selectivity  TOP 1%   of 720+    (1 of 7 chosen)
-│   trading_bot  57.5% win rate    ·   120-trade backtest
-│   certified    4×   HackerRank    (SQL · Problem Solving)
-│   status       ▸ OPEN TO INTERNSHIPS & COLLABS ⚡
-│
-╰──────────────────────────────────────────────────────
-```
+<div align="center">
+
+<img src="https://img.shields.io/badge/%F0%9F%92%BB%20role-AI%20Engineer%20%C3%97%20Backend%20Dev-8B5CF6?style=for-the-badge&labelColor=0D1117" alt="💻 role"/>
+<br/>
+<img src="https://img.shields.io/badge/%F0%9F%93%8D%20location-Pune%2C%20India-F43F5E?style=for-the-badge&labelColor=0D1117" alt="📍 location"/>
+<br/>
+<img src="https://img.shields.io/badge/%F0%9F%92%BC%20internships-3%C3%97%20%C2%B7%20AI%20%C2%B7%20Backend%20%C2%B7%20Data-3B82F6?style=for-the-badge&labelColor=0D1117" alt="💼 internships"/>
+<br/>
+<img src="https://img.shields.io/badge/%F0%9F%8F%86%20selectivity-Top%201%25%20of%20720%2B-F59E0B?style=for-the-badge&labelColor=0D1117" alt="🏆 selectivity"/>
+<br/>
+<img src="https://img.shields.io/badge/%F0%9F%93%88%20trading%20bot-57.5%25%20Win%20Rate%20%C2%B7%20120%20Trades-10B981?style=for-the-badge&labelColor=0D1117" alt="📈 trading bot"/>
+<br/>
+<img src="https://img.shields.io/badge/%F0%9F%8E%93%20certified-4%C3%97%20HackerRank-06B6D4?style=for-the-badge&labelColor=0D1117" alt="🎓 certified"/>
+<br/>
+<img src="https://img.shields.io/badge/%E2%9A%A1%20status-Open%20to%20Internships%20%26%20Collabs-22C55E?style=for-the-badge&labelColor=0D1117" alt="⚡ status"/>
+
+</div>
 
 <div align="center">
 
