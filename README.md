@@ -52,13 +52,13 @@
 
 <div align="center">
 
-<a href="https://github.com/AyushChangedia"><img src="https://img.shields.io/badge/GitHub-0D1117?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/></a>
+<a href="https://github.com/AyushChangedia"><img src="https://img.shields.io/badge/GitHub-E5E7EB?style=for-the-badge&logo=github&logoColor=181717" alt="GitHub"/></a>
 &nbsp;
-<a href="mailto:ayushc7711@gmail.com"><img src="https://img.shields.io/badge/Email-0D1117?style=for-the-badge&logo=gmail&logoColor=EA4335" alt="Email"/></a>
+<a href="mailto:ayushc7711@gmail.com"><img src="https://img.shields.io/badge/Email-FEE2E2?style=for-the-badge&logo=gmail&logoColor=C5221F" alt="Email"/></a>
 &nbsp;
-<a href="https://ayushchangedia.github.io/AyushChangedia/"><img src="https://img.shields.io/badge/Portfolio-0D1117?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio"/></a>
+<a href="https://ayushchangedia.github.io/AyushChangedia/"><img src="https://img.shields.io/badge/Portfolio-E0F2FE?style=for-the-badge&logo=vercel&logoColor=0F172A" alt="Portfolio"/></a>
 &nbsp;
-<a href="./Ayush_Changedia_Resume.pdf"><img src="https://img.shields.io/badge/Résumé-0D1117?style=for-the-badge&logo=readdotcv&logoColor=22C55E" alt="Résumé"/></a>
+<a href="./Ayush_Changedia_Resume.pdf"><img src="https://img.shields.io/badge/Résumé-DCFCE7?style=for-the-badge&logo=readdotcv&logoColor=15803D" alt="Résumé"/></a>
 
 </div>
 
