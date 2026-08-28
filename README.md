@@ -4,7 +4,7 @@
   ------------------------------------------------------------------------------------
   GitHub username is already set to: AyushChangedia
   STILL TODO — replace these placeholders (Ctrl/Cmd+F each one):
-    • REPO_ORB / REPO_HACKATHON → project repo URLs (Résumé Roaster is linked)
+    • REPO_ORB → project repo URL (Résumé Roaster and Git City are linked)
   (Résumé is committed at ./Ayush_Changedia_Resume.pdf and already linked.)
   (Portfolio site lives in /docs — enable GitHub Pages to serve it at
    https://ayushchangedia.github.io/AyushChangedia/ )
@@ -101,7 +101,7 @@ I'm a CS student at **MIT-WPU** who got a little too curious about *why* softwar
 
 Three internships later, that curiosity has a shape: at **NeuralForge Labs** I built an LLM-powered résumé-screening tool with **Python + FastAPI + OpenAI APIs** that quietly kills the first-round shortlisting grind. At **yteNest Technologies** I shipped scalable **Node.js / Express / PostgreSQL** REST APIs for product, order, and payment flows — with JWT auth and query tuning so it's fast *and* safe. And at **Mindenious** I turned messy marketing data into **Power BI** dashboards people actually make decisions with.
 
-Off the clock, I automate my own hobbies too — my **ORB Strategy Backtester** runs opening-range-breakout backtests on Bank Nifty futures through a custom **TradingView MCP** integration. When there's a hackathon within a 500km radius, I'm probably in it, over-caffeinated, demoing something that *technically* works.
+Off the clock, I automate my own hobbies too — my **ORB Strategy Backtester** runs opening-range-breakout backtests on Bank Nifty futures through a custom **TradingView MCP** integration. When there's a CTF running, I'm probably in it, over-caffeinated, exploiting something that *technically* shouldn't work.
 
 <div align="center">
   <br/>
@@ -216,20 +216,19 @@ Off the clock, I automate my own hobbies too — my **ORB Strategy Backtester** 
 <tr>
 <td width="50%" valign="top">
 
-### ⚡ Hackathon Builds
-> HACK MIT-WPU × Smart India Hackathon — AI/IoT prototypes.
+### 🏙️ Git City
+> Paste a GitHub repo URL and watch its history build itself, commit by commit, as a 3D city.
 
-**Stack:** `Python` · `AI` · `IoT`
+**Stack:** `JavaScript` · `three.js` · `WebGL` · `GitHub API`
 
 **Highlights**
-- AI chatbots + an AI-based skill-assessment portal
-- Smart energy-monitoring & attendance system
-- Scoped → built → demoed under real hackathon deadlines
+- Every file is a building, every folder a district, split across a river
+- Height = line count; buildings glow on commit, then cool back over 20 commits
+- ~45s of scrubbable playback for any repo — no backend, no build step
 
-**Impact:** Working demos shipped in small, fast teams.
+**Impact:** Turns a `git log` into a skyline you can actually read.
 
-<!-- Replace REPO_HACKATHON with the repo URL -->
-[![Repo](https://img.shields.io/badge/View%20Repo-181717?style=for-the-badge&logo=github&logoColor=white)](REPO_HACKATHON)
+[![Repo](https://img.shields.io/badge/View%20Repo-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/AyushChangedia/Git-City)
 
 </td>
 <td width="50%" valign="top">
@@ -267,7 +266,6 @@ Off the clock, I automate my own hobbies too — my **ORB Strategy Backtester** 
 | **Software Development Intern** | Built scalable REST APIs @ yteNest Technologies |
 | **Data Analytics Intern** | Marketing/sales dashboards & ROI tracking @ Mindenious |
 | **Top 1% — Internshala Student Partner** | 1 of **7** chosen from **720+** applicants; onboarded 29 students |
-| **🥉 3rd Place — Hackathon (2025)** | <!-- add the hackathon name --> Podium finish in a competitive build sprint |
 | **Digital Marketing** | Closed **27 deals** across **12 client accounts**, outreach → closure |
 | **HackerRank Certified** | SQL (Advanced) · SQL (Intermediate) · Problem Solving · Critical Thinking |
 

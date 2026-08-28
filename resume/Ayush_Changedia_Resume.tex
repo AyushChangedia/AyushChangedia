@@ -1,0 +1,240 @@
+%-------------------------------------------------------------------------------
+% Ayush Sameer Changedia — Résumé
+% Based on Jake Gutierrez's resume template (MIT licence)
+% https://github.com/jakegut/resume
+% Build:
+%   pdflatex Ayush_Changedia_Resume.tex
+%   cp Ayush_Changedia_Resume.pdf ../Ayush_Changedia_Resume.pdf
+%   cp Ayush_Changedia_Resume.pdf ../docs/Ayush_Changedia_Resume.pdf
+%
+% TODO — placeholders still to fill in:
+%   [[ISP-START]], [[ISP-END]], [[MKT-END-MONTH]]
+%-------------------------------------------------------------------------------
+\documentclass[a4paper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\setlength{\footskip}{4.08003pt}
+
+% Margins: 0.5in on A4 -> textwidth 523.276bp
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section headings: \large, ruled
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generated pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      #1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Ayush Sameer Changedia} \\ \vspace{1pt}
+    \small +91 9175142006 $|$
+    \href{mailto:ayushc7711@gmail.com}{\underline{ayushc7711@gmail.com}} $|$
+    \href{https://www.linkedin.com/in/ayushchangedia/}{\underline{linkedin.com/in/ayushchangedia}} $|$
+    \href{https://github.com/AyushChangedia}{\underline{github.com/AyushChangedia}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {MIT World Peace University}{Pune, India}
+      {B.Sc. Computer Science | CGPA: 8.2/10}{2025 -- 2029}
+      \resumeItemListStart
+        \resumeItem{Class XII: 80\% \quad $|$ \quad Class X: 70\%}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {AI Engineering Intern}{May 2026 -- Jun 2026}
+      {NeuralForge Labs}{Remote}
+      \resumeItemListStart
+        \resumeItem{Built an LLM-powered resume-screening tool using \textbf{Python, FastAPI, and OpenAI APIs}, automating first-round candidate shortlisting}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Software Development Intern}{Apr 2026 -- May 2026}
+      {yteNest Technologies}{Remote}
+      \resumeItemListStart
+        \resumeItem{Developed scalable \textbf{REST APIs} for product, order, and payment workflows using \textbf{Node.js, Express.js, and PostgreSQL}}
+        \resumeItem{Implemented \textbf{JWT authentication}, input validation, and optimized SQL queries, improving API performance and security}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Data Analytics Intern}{Jan 2026 -- Mar 2026}
+      {Mindenious}{Remote}
+      \resumeItemListStart
+        \resumeItem{Analyzed website, marketing, and sales data using \textbf{SQL, Excel, Power BI, Python (Pandas), and Google Analytics 4}}
+        \resumeItem{Developed dashboards tracking \textbf{conversion rates, customer behavior, and campaign ROI}, enabling data-driven marketing decisions}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+
+      \resumeProjectHeading
+          {\textbf{ORB Strategy Backtester} {\small $|$ \emph{Python, Pine Script v5, TradingView MCP}}}{2026}
+          \resumeItemListStart
+            \resumeItem{Automated opening-range-breakout backtesting on \textbf{Bank Nifty futures} via a custom TradingView MCP integration; executed a 6-month, \textbf{120-trade backtest at a 57.5\% win rate}}
+            \resumeItem{Engineered a \textbf{parameter-optimization loop} that isolated commission drag as the primary P\&L leak, informing a lower-frequency, higher-net-return strategy variant}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Git City} {\small $|$ \emph{JavaScript, three.js, WebGL, GitHub API}}}{2026}
+          \resumeItemListStart
+            \resumeItem{Built a browser-based tool that replays any GitHub repository's history as a \textbf{3D city} -- every file a building, every folder a district, building height driven by line count}
+            \resumeItem{Engineered the layout, camera fit, and playback as \textbf{pure geometry modules verified headlessly in Node}, keeping the project at zero dependencies and no build step}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Résumé Roaster} {\small $|$ \emph{Python, FastAPI, Groq LLM}}}{2026}
+          \resumeItemListStart
+            \resumeItem{Developed an AI web app that scores a résumé against a target job description and returns \textbf{blunt, actionable feedback} on gaps, weak bullets, and filler}
+            \resumeItem{Designed the \textbf{LLM prompting and scoring pipeline} behind the critique, served over a FastAPI backend}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{E-Commerce REST API} {\small $|$ \emph{Node.js, Express.js, MongoDB, JWT}}}{2026}
+          \resumeItemListStart
+            \resumeItem{Built a scalable e-commerce API with \textbf{JWT authentication, role-based authorization}, and transactional order processing with inventory management}
+            \resumeItem{Implemented advanced querying -- \textbf{filtering, sorting, and pagination} -- across product and order endpoints for a secure, production-style API surface}
+          \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+
+%-----------LEADERSHIP-----------
+\section{Leadership \& Additional Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Internshala Student Partner (ISP)}{[[ISP-START]] -- [[ISP-END]]}
+      {Internshala | MIT-WPU Campus}{Pune, India}
+      \resumeItemListStart
+        \resumeItem{Selected as \textbf{1 of 7 partners from 720+ applicants (top 1\%)}; onboarded 29 students and mentored them on upskilling paths}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Digital Marketing}{Mar 2026 -- [[MKT-END-MONTH]] 2026}
+      {Mindenious}{Remote}
+      \resumeItemListStart
+        \resumeItem{Closed \textbf{27 deals across 12 client accounts}, owning the full cycle from outreach to closure}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Fundraising Intern}{2026}
+      {NayePankh Foundation \& She Can Foundation}{Remote}
+      \resumeItemListStart
+        \resumeItem{Drove donation campaigns funding education access for underprivileged children}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, C++, JavaScript, SQL, HTML/CSS} \\
+     \textbf{Frameworks \& Libraries}{: Node.js, Express.js, FastAPI, REST APIs, OpenAI/LLM APIs, NumPy, Pandas, jQuery} \\
+     \textbf{Databases \& Tools}{: PostgreSQL, MySQL, MongoDB, Git \& GitHub, Power BI, Google Analytics 4, Excel, TradingView (Pine Script)} \\
+     \textbf{Core Concepts}{: OOP, DBMS, Data Structures, REST Architecture, JWT Authentication, Data Analysis}
+    }}
+ \end{itemize}
+
+
+%-----------CERTIFICATIONS-----------
+\section{Certifications \& Achievements}
+  \resumeSubHeadingListStart
+    \item
+    \resumeItemListStart
+      \resumeItem{\textbf{HackerRank:} SQL (Advanced), SQL (Intermediate), Problem Solving, Critical Thinking}
+      \resumeItem{\textbf{Internship Certificates:} AI Engineering -- NeuralForge Labs; Software Development -- yteNest Technologies; Data Analytics -- Mindenious}
+      \resumeItem{\textbf{CTF Competitions:} Active participant in Capture-the-Flag security competitions and CTF-style hackathons}
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
