@@ -58,7 +58,7 @@
 &nbsp;
 <a href="https://ayushchangedia.github.io/AyushChangedia/"><img src="https://img.shields.io/badge/Portfolio-E0F2FE?style=for-the-badge&logo=vercel&logoColor=0F172A" alt="Portfolio"/></a>
 &nbsp;
-<a href="./Ayush_Changedia_Resume.pdf"><img src="https://img.shields.io/badge/Résumé-DCFCE7?style=for-the-badge&logo=readdotcv&logoColor=15803D" alt="Résumé"/></a>
+<a href="./Ayush_Changedia_Resume.pdf"><img src="./assets/resume-button.svg" width="152" height="30" alt="Résumé"/></a>
 
 </div>
 

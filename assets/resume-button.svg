@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="152" height="30" viewBox="0 0 152 30" role="img" aria-label="Résumé">
+  <title>Résumé</title>
+  <defs>
+    <!-- Animated -45deg gradient border: #ffae00 -> #7e03aa -> #00fffb, tiled and drifted for a seamless loop -->
+    <linearGradient id="border" gradientUnits="userSpaceOnUse"
+                    x1="0" y1="200" x2="200" y2="0" spreadMethod="repeat">
+      <stop offset="0"    stop-color="#ffae00"/>
+      <stop offset="0.25" stop-color="#7e03aa"/>
+      <stop offset="0.5"  stop-color="#00fffb"/>
+      <stop offset="0.75" stop-color="#7e03aa"/>
+      <stop offset="1"    stop-color="#ffae00"/>
+      <animateTransform attributeName="gradientTransform" type="translate"
+                        from="0 0" to="200 -200" dur="5s" repeatCount="indefinite"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Outer plate: notched top-left / bottom-right, filled by the moving gradient -->
+  <path fill="url(#border)"
+        d="M0 8 L8 0 H152 V22 L144 30 H0 Z"/>
+
+  <!-- Inner plate: dark fill inset by the border width -->
+  <path fill="#080312"
+        d="M2 9 L9 2 H150 V21 L143 28 H2 Z"/>
+
+  <text x="76" y="19.5" text-anchor="middle"
+        font-family="Verdana,DejaVu Sans,Geneva,sans-serif"
+        font-size="11" font-weight="bold" letter-spacing="1.6" fill="#afffff">RÉSUMÉ</text>
+</svg>
