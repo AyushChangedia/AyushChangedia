@@ -336,33 +336,6 @@ Off the clock, I automate my own hobbies too — my **ORB Strategy Backtester** 
 <!-- ========================= ✂️ DIVIDER ========================= -->
 <img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6,11,20&height=3" alt="divider"/>
 
-<!-- ========================= 💻 CODING PHILOSOPHY ========================= -->
-## <img src="https://media.giphy.com/media/LMt9638dO8dftAjtco/giphy.gif" width="28"> &nbsp;while ( caffeinated )
-
-```python
-class Ayush:
-    def __init__(self):
-        self.role     = "AI Engineer × Backend Dev"
-        self.fuel     = "☕"
-        self.mission  = "automate the boring, ship the useful"
-
-    def daily_loop(self):
-        while self.fuel:
-            self.build()      # APIs, agents, backtests
-            self.learn()      # today's rabbit hole → tomorrow's skill
-            self.ship()       # done > perfect
-            self.fuel = self.refill_coffee()   # base case: never
-
-    def philosophy(self):
-        return "If I have to do it twice, I'm writing a script for it."
-
-
-# ⚠️ Warning: this loop has no exit condition. That's a feature.
-```
-
-<!-- ========================= ✂️ DIVIDER ========================= -->
-<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6,11,20&height=3" alt="divider"/>
-
 <!-- ========================= 🎯 CURRENT FOCUS ========================= -->
 ## <img src="https://media.giphy.com/media/hpXdHPfFI5wPjEmvIw/giphy.gif" width="28"> &nbsp;Currently Leveling Up
 
