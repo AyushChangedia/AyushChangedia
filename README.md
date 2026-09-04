@@ -21,7 +21,7 @@
 <!-- ========================= ⌨️ ANIMATED TYPING SVG ========================= -->
 <div align="center">
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=24&pause=900&color=6EE7F9&center=true&vCenter=true&width=720&height=48&lines=I+build+AI+systems+that+do+the+boring+work+for+you;Backend+APIs+that+don't+fall+over+at+2am;Trading+bots+that+backtest+while+I+sleep+%F0%9F%93%88;Turning+coffee+into+clean%2C+shipped+code+%E2%98%95)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=24&pause=900&color=6EE7F9&center=true&vCenter=true&width=720&height=48&lines=I+build+AI+systems+that+do+the+boring+work+for+you;Backend+APIs+that+don't+fall+over+at+2am;Trading+bots+that+backtest+while+I+sleep+%F0%9F%93%88)](https://git.io/typing-svg)
 
 </div>
 
@@ -77,7 +77,7 @@
 </p>
 
 <p align="center">
-  <i>Coffee-powered ☕ &nbsp;·&nbsp; Occasional bug creator 🐛 &nbsp;·&nbsp; Full-time bug destroyer 🔨</i>
+  <i>Occasional bug creator 🐛 &nbsp;·&nbsp; Full-time bug destroyer 🔨</i>
 </p>
 
 <p align="center">
@@ -101,7 +101,7 @@ I'm a CS student at **MIT-WPU** who got a little too curious about *why* softwar
 
 Three internships later, that curiosity has a shape: at **NeuralForge Labs** I built an LLM-powered résumé-screening tool with **Python + FastAPI + OpenAI APIs** that quietly kills the first-round shortlisting grind. At **yteNest Technologies** I shipped scalable **Node.js / Express / PostgreSQL** REST APIs for product, order, and payment flows — with JWT auth and query tuning so it's fast *and* safe. And at **Mindenious** I turned messy marketing data into **Power BI** dashboards people actually make decisions with.
 
-Off the clock, I automate my own hobbies too — my **ORB Strategy Backtester** runs opening-range-breakout backtests on Bank Nifty futures through a custom **TradingView MCP** integration. When there's a CTF running, I'm probably in it, over-caffeinated, exploiting something that *technically* shouldn't work.
+Off the clock, I automate my own hobbies too — my **ORB Strategy Backtester** runs opening-range-breakout backtests on Bank Nifty futures through a custom **TradingView MCP** integration. When there's a CTF running, I'm probably in it, exploiting something that *technically* shouldn't work.
 
 <div align="center">
   <br/>
@@ -111,7 +111,6 @@ Off the clock, I automate my own hobbies too — my **ORB Strategy Backtester** 
   | | |
   |:--|:--|
   | ⚡ | I automate things because clicking twice is already one click too many. |
-  | ☕ | My commit history is basically coffee → code → `git push` → repeat. |
   | 🤖 | If it can be automated, there's a decent chance I'm already building it. |
   | 📈 | I once let a script trade 120 times just to prove commissions were the villain. |
 
@@ -397,5 +396,5 @@ I'm always up for a good problem — internships, collabs, or a chat about AI, b
 <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=150&section=footer&text=Thanks%20for%20scrolling!%20%E2%9C%A8&fontSize=22&fontColor=ffffff&fontAlignY=70&animation=fadeIn" alt="footer"/>
 
 <div align="center">
-  <sub>⭐ From <a href="https://github.com/AyushChangedia">Ayush Changedia</a> — built with too much coffee and just enough sleep.</sub>
+  <sub>⭐ From <a href="https://github.com/AyushChangedia">Ayush Changedia</a></sub>
 </div>
