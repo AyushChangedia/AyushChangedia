@@ -52,8 +52,6 @@
 
 <div align="center">
 
-<a href="https://github.com/AyushChangedia"><img src="https://img.shields.io/badge/GitHub-E5E7EB?style=for-the-badge&logo=github&logoColor=181717" alt="GitHub"/></a>
-&nbsp;
 <a href="mailto:ayushc7711@gmail.com"><img src="./assets/email-button.svg" width="137" height="30" alt="Email"/></a>
 &nbsp;
 <a href="https://ayushchangedia.github.io/AyushChangedia/"><img src="./assets/portfolio-button.svg" width="176" height="30" alt="Portfolio"/></a>
