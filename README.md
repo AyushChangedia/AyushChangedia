@@ -255,7 +255,7 @@ Off the clock, I automate my own hobbies too — my **ORB Strategy Backtester** 
 
 <div align="center">
 
-<img src="./assets/cert-showcase.svg" width="520" height="190" alt="HackerRank certifications: SQL (Advanced), SQL (Intermediate), Problem Solving, Critical Thinking"/>
+<img src="./assets/cert-showcase.svg" width="520" height="190" alt="Certifications: HackerRank SQL (Advanced), SQL (Intermediate), Problem Solving, Critical Thinking; C Programming (Intermediate); Ethical AI Masterclass; Data Analytics Internship; Certificate of Excellence"/>
 
 <br/>
 
@@ -271,6 +271,10 @@ Off the clock, I automate my own hobbies too — my **ORB Strategy Backtester** 
 | 🔍 | **[SQL (Intermediate)](https://www.hackerrank.com/certificates/1f91721770f5)** · HackerRank | Joins and aggregation that stay fast past the toy-dataset mark |
 | 🧩 | **[Problem Solving](https://www.hackerrank.com/certificates/e59db1a2994a)** · HackerRank | Choosing the data structure *before* writing the loop |
 | 🧠 | **Critical Thinking** · HackerRank | Reading the requirement nobody bothered to write down |
+| 🔧 | **C Programming (Intermediate)** · Alabama University | Pointers, memory, and the discipline of manual allocation |
+| 🤖 | **Ethical AI Masterclass** · Cybrent × MIT-WPU R.I.D.E 2026 | AI whispering, ethical guardrails, and peer programming with an LLM |
+| 📊 | **Data Analytics Internship** · Mindenious | Two months turning messy marketing data into decisions |
+| 🏅 | **Certificate of Excellence** · Mindenious | Awarded for standout performance across the analytics track |
 
 </div>
 

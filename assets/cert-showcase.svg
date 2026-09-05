@@ -1,82 +1,120 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="520" height="190" viewBox="0 0 520 190" role="img"
-     aria-label="Credential card cycling through four HackerRank certifications: SQL (Advanced), SQL (Intermediate), Problem Solving, Critical Thinking">
-  <title>HackerRank certifications</title>
+     aria-label="Credential card cycling through 8 certifications: SQL (Advanced), SQL (Intermediate), Problem Solving, Critical Thinking, C Programming (Intermediate), Ethical AI Masterclass, Data Analytics Internship, Certificate of Excellence">
+  <title>Certifications</title>
   <defs>
     <linearGradient id="edge" gradientUnits="userSpaceOnUse" x1="0" y1="190" x2="520" y2="0">
-      <stop offset="0"   stop-color="#ffae00"/>
-      <stop offset="0.5" stop-color="#7e03aa"/>
-      <stop offset="1"   stop-color="#00fffb"/>
+      <stop offset="0" stop-color="#ffae00"/><stop offset="0.5" stop-color="#7e03aa"/><stop offset="1" stop-color="#00fffb"/>
     </linearGradient>
     <linearGradient id="sheen">
-      <stop offset="0"   stop-color="#fff" stop-opacity="0"/>
+      <stop offset="0" stop-color="#fff" stop-opacity="0"/>
       <stop offset="0.5" stop-color="#fff" stop-opacity="0.14"/>
-      <stop offset="1"   stop-color="#fff" stop-opacity="0"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
     </linearGradient>
     <clipPath id="card"><rect x="2" y="2" width="516" height="186" rx="11"/></clipPath>
   </defs>
 
   <rect x="2" y="2" width="516" height="186" rx="11" fill="#0d1117" stroke="url(#edge)" stroke-width="2.5"/>
-
   <g clip-path="url(#card)">
     <rect y="-50" width="120" height="290" fill="url(#sheen)" transform="skewX(-16)">
       <animate attributeName="x" from="-190" to="620" dur="3.4s" repeatCount="indefinite"/>
     </rect>
   </g>
+  <line x1="30" y1="110" x2="490" y2="110" stroke="#30363d" stroke-width="1"/>
 
-  <!-- static chrome -->
-  <text x="30" y="42" font-family="Verdana,DejaVu Sans,sans-serif" font-size="11.5" font-weight="bold"
-        letter-spacing="2.4" fill="#6ee7f9">HACKERRANK</text>
-  <line x1="30" y1="112" x2="490" y2="112" stroke="#30363d" stroke-width="1"/>
-  <text x="490" y="165" text-anchor="end" font-family="Verdana,DejaVu Sans,sans-serif" font-size="11"
-        letter-spacing="1.2" fill="#8b949e">SKILL CERTIFICATION</text>
-
-  <!-- flipper: squashes to edge-on at each quarter, hiding the swap -->
   <g transform="translate(260,0)">
     <g>
       <animateTransform attributeName="transform" type="scale"
-        values="0 1;1 1;1 1;0 1;1 1;1 1;0 1;1 1;1 1;0 1;1 1;1 1;0 1"
-        keyTimes="0;0.0188;0.2313;0.25;0.2688;0.4813;0.5;0.5188;0.7313;0.75;0.7688;0.9813;1"
-        dur="16s" repeatCount="indefinite"/>
+        values="0 1;1 1;1 1;0 1;1 1;1 1;0 1;1 1;1 1;0 1;1 1;1 1;0 1;1 1;1 1;0 1;1 1;1 1;0 1;1 1;1 1;0 1;1 1;1 1;0 1"
+        keyTimes="0;0.0166667;0.108333;0.125;0.141667;0.233333;0.25;0.266667;0.358333;0.375;0.391667;0.483333;0.5;0.516667;0.608333;0.625;0.641667;0.733333;0.75;0.766667;0.858333;0.875;0.891667;0.983333;1"
+        dur="24s" repeatCount="indefinite"/>
       <g transform="translate(-260,0)">
   <g opacity="1">
-    <animate attributeName="opacity" values="1;0;0;0" keyTimes="0;0.25;0.5;0.75"
-             calcMode="discrete" dur="16s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="1;0;0;0;0;0;0;0" keyTimes="0;0.125;0.25;0.375;0.5;0.625;0.75;0.875"
+             calcMode="discrete" dur="24s" repeatCount="indefinite"/>
+    <text x="30" y="42" font-family="Verdana,DejaVu Sans,sans-serif" font-size="11.5" font-weight="bold" letter-spacing="2.4" fill="#6ee7f9">HACKERRANK</text>
     <rect x="384" y="26" width="106" height="23" rx="11.5" fill="#052e16" stroke="#22c55e" stroke-width="1"/>
-    <text x="437" y="41.5" text-anchor="middle" font-family="Verdana,DejaVu Sans,sans-serif" font-size="10"
-          font-weight="bold" letter-spacing="1.1" fill="#4ade80">&#10003; VERIFIED</text>
-    <text x="30" y="92" font-family="Verdana,DejaVu Sans,sans-serif" font-size="27" font-weight="bold" fill="#f0f6fc">SQL (Advanced)</text>
+    <text x="437" y="41.5" text-anchor="middle" font-family="Verdana,DejaVu Sans,sans-serif" font-size="10" font-weight="bold" letter-spacing="1.1" fill="#4ade80">&#10003; VERIFIED</text>
+    <text x="30" y="90" font-family="Verdana,DejaVu Sans,sans-serif" font-size="24" font-weight="bold" fill="#f0f6fc">SQL (Advanced)</text>
     <text x="30" y="137" font-family="Verdana,DejaVu Sans,sans-serif" font-size="12.5" fill="#8b949e">Window functions, CTEs, and query plans I can defend</text>
-    <text x="30" y="165" font-family="Verdana,DejaVu Sans,sans-serif" font-size="11" letter-spacing="1.2" fill="#fe428e">1 OF 4 &#183; HACKERRANK TRACK</text>
+    <text x="30" y="165" font-family="Verdana,DejaVu Sans,sans-serif" font-size="11" letter-spacing="1.2" fill="#fe428e">1 OF 8</text>
+    <text x="490" y="165" text-anchor="end" font-family="Verdana,DejaVu Sans,sans-serif" font-size="11" letter-spacing="1.2" fill="#8b949e">SKILL CERTIFICATION</text>
   </g>
   <g opacity="0">
-    <animate attributeName="opacity" values="0;1;0;0" keyTimes="0;0.25;0.5;0.75"
-             calcMode="discrete" dur="16s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;1;0;0;0;0;0;0" keyTimes="0;0.125;0.25;0.375;0.5;0.625;0.75;0.875"
+             calcMode="discrete" dur="24s" repeatCount="indefinite"/>
+    <text x="30" y="42" font-family="Verdana,DejaVu Sans,sans-serif" font-size="11.5" font-weight="bold" letter-spacing="2.4" fill="#6ee7f9">HACKERRANK</text>
     <rect x="384" y="26" width="106" height="23" rx="11.5" fill="#052e16" stroke="#22c55e" stroke-width="1"/>
-    <text x="437" y="41.5" text-anchor="middle" font-family="Verdana,DejaVu Sans,sans-serif" font-size="10"
-          font-weight="bold" letter-spacing="1.1" fill="#4ade80">&#10003; VERIFIED</text>
-    <text x="30" y="92" font-family="Verdana,DejaVu Sans,sans-serif" font-size="27" font-weight="bold" fill="#f0f6fc">SQL (Intermediate)</text>
+    <text x="437" y="41.5" text-anchor="middle" font-family="Verdana,DejaVu Sans,sans-serif" font-size="10" font-weight="bold" letter-spacing="1.1" fill="#4ade80">&#10003; VERIFIED</text>
+    <text x="30" y="90" font-family="Verdana,DejaVu Sans,sans-serif" font-size="24" font-weight="bold" fill="#f0f6fc">SQL (Intermediate)</text>
     <text x="30" y="137" font-family="Verdana,DejaVu Sans,sans-serif" font-size="12.5" fill="#8b949e">Joins and aggregation that stay fast past the toy-dataset mark</text>
-    <text x="30" y="165" font-family="Verdana,DejaVu Sans,sans-serif" font-size="11" letter-spacing="1.2" fill="#fe428e">2 OF 4 &#183; HACKERRANK TRACK</text>
+    <text x="30" y="165" font-family="Verdana,DejaVu Sans,sans-serif" font-size="11" letter-spacing="1.2" fill="#fe428e">2 OF 8</text>
+    <text x="490" y="165" text-anchor="end" font-family="Verdana,DejaVu Sans,sans-serif" font-size="11" letter-spacing="1.2" fill="#8b949e">SKILL CERTIFICATION</text>
   </g>
   <g opacity="0">
-    <animate attributeName="opacity" values="0;0;1;0" keyTimes="0;0.25;0.5;0.75"
-             calcMode="discrete" dur="16s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;1;0;0;0;0;0" keyTimes="0;0.125;0.25;0.375;0.5;0.625;0.75;0.875"
+             calcMode="discrete" dur="24s" repeatCount="indefinite"/>
+    <text x="30" y="42" font-family="Verdana,DejaVu Sans,sans-serif" font-size="11.5" font-weight="bold" letter-spacing="2.4" fill="#6ee7f9">HACKERRANK</text>
     <rect x="384" y="26" width="106" height="23" rx="11.5" fill="#052e16" stroke="#22c55e" stroke-width="1"/>
-    <text x="437" y="41.5" text-anchor="middle" font-family="Verdana,DejaVu Sans,sans-serif" font-size="10"
-          font-weight="bold" letter-spacing="1.1" fill="#4ade80">&#10003; VERIFIED</text>
-    <text x="30" y="92" font-family="Verdana,DejaVu Sans,sans-serif" font-size="27" font-weight="bold" fill="#f0f6fc">Problem Solving</text>
+    <text x="437" y="41.5" text-anchor="middle" font-family="Verdana,DejaVu Sans,sans-serif" font-size="10" font-weight="bold" letter-spacing="1.1" fill="#4ade80">&#10003; VERIFIED</text>
+    <text x="30" y="90" font-family="Verdana,DejaVu Sans,sans-serif" font-size="24" font-weight="bold" fill="#f0f6fc">Problem Solving</text>
     <text x="30" y="137" font-family="Verdana,DejaVu Sans,sans-serif" font-size="12.5" fill="#8b949e">Choosing the data structure before writing the loop</text>
-    <text x="30" y="165" font-family="Verdana,DejaVu Sans,sans-serif" font-size="11" letter-spacing="1.2" fill="#fe428e">3 OF 4 &#183; HACKERRANK TRACK</text>
+    <text x="30" y="165" font-family="Verdana,DejaVu Sans,sans-serif" font-size="11" letter-spacing="1.2" fill="#fe428e">3 OF 8</text>
+    <text x="490" y="165" text-anchor="end" font-family="Verdana,DejaVu Sans,sans-serif" font-size="11" letter-spacing="1.2" fill="#8b949e">SKILL CERTIFICATION</text>
   </g>
   <g opacity="0">
-    <animate attributeName="opacity" values="0;0;0;1" keyTimes="0;0.25;0.5;0.75"
-             calcMode="discrete" dur="16s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;0;1;0;0;0;0" keyTimes="0;0.125;0.25;0.375;0.5;0.625;0.75;0.875"
+             calcMode="discrete" dur="24s" repeatCount="indefinite"/>
+    <text x="30" y="42" font-family="Verdana,DejaVu Sans,sans-serif" font-size="11.5" font-weight="bold" letter-spacing="2.4" fill="#6ee7f9">HACKERRANK</text>
     <rect x="384" y="26" width="106" height="23" rx="11.5" fill="#052e16" stroke="#22c55e" stroke-width="1"/>
-    <text x="437" y="41.5" text-anchor="middle" font-family="Verdana,DejaVu Sans,sans-serif" font-size="10"
-          font-weight="bold" letter-spacing="1.1" fill="#4ade80">&#10003; CERTIFIED</text>
-    <text x="30" y="92" font-family="Verdana,DejaVu Sans,sans-serif" font-size="27" font-weight="bold" fill="#f0f6fc">Critical Thinking</text>
+    <text x="437" y="41.5" text-anchor="middle" font-family="Verdana,DejaVu Sans,sans-serif" font-size="10" font-weight="bold" letter-spacing="1.1" fill="#4ade80">&#10003; CERTIFIED</text>
+    <text x="30" y="90" font-family="Verdana,DejaVu Sans,sans-serif" font-size="24" font-weight="bold" fill="#f0f6fc">Critical Thinking</text>
     <text x="30" y="137" font-family="Verdana,DejaVu Sans,sans-serif" font-size="12.5" fill="#8b949e">Reading the requirement nobody bothered to write down</text>
-    <text x="30" y="165" font-family="Verdana,DejaVu Sans,sans-serif" font-size="11" letter-spacing="1.2" fill="#fe428e">4 OF 4 &#183; HACKERRANK TRACK</text>
+    <text x="30" y="165" font-family="Verdana,DejaVu Sans,sans-serif" font-size="11" letter-spacing="1.2" fill="#fe428e">4 OF 8</text>
+    <text x="490" y="165" text-anchor="end" font-family="Verdana,DejaVu Sans,sans-serif" font-size="11" letter-spacing="1.2" fill="#8b949e">SKILL CERTIFICATION</text>
+  </g>
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;0;0;0;1;0;0;0" keyTimes="0;0.125;0.25;0.375;0.5;0.625;0.75;0.875"
+             calcMode="discrete" dur="24s" repeatCount="indefinite"/>
+    <text x="30" y="42" font-family="Verdana,DejaVu Sans,sans-serif" font-size="11.5" font-weight="bold" letter-spacing="2.4" fill="#6ee7f9">ALABAMA UNIVERSITY</text>
+    <rect x="384" y="26" width="106" height="23" rx="11.5" fill="#052e16" stroke="#22c55e" stroke-width="1"/>
+    <text x="437" y="41.5" text-anchor="middle" font-family="Verdana,DejaVu Sans,sans-serif" font-size="10" font-weight="bold" letter-spacing="1.1" fill="#4ade80">&#10003; CERTIFIED</text>
+    <text x="30" y="90" font-family="Verdana,DejaVu Sans,sans-serif" font-size="24" font-weight="bold" fill="#f0f6fc">C Programming (Intermediate)</text>
+    <text x="30" y="137" font-family="Verdana,DejaVu Sans,sans-serif" font-size="12.5" fill="#8b949e">Pointers, memory, and the discipline of manual allocation</text>
+    <text x="30" y="165" font-family="Verdana,DejaVu Sans,sans-serif" font-size="11" letter-spacing="1.2" fill="#fe428e">5 OF 8</text>
+    <text x="490" y="165" text-anchor="end" font-family="Verdana,DejaVu Sans,sans-serif" font-size="11" letter-spacing="1.2" fill="#8b949e">COURSE CERTIFICATE · 2026</text>
+  </g>
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;0;0;0;0;1;0;0" keyTimes="0;0.125;0.25;0.375;0.5;0.625;0.75;0.875"
+             calcMode="discrete" dur="24s" repeatCount="indefinite"/>
+    <text x="30" y="42" font-family="Verdana,DejaVu Sans,sans-serif" font-size="11.5" font-weight="bold" letter-spacing="2.4" fill="#6ee7f9">CYBRENT × MIT-WPU</text>
+    <rect x="384" y="26" width="106" height="23" rx="11.5" fill="#052e16" stroke="#22c55e" stroke-width="1"/>
+    <text x="437" y="41.5" text-anchor="middle" font-family="Verdana,DejaVu Sans,sans-serif" font-size="10" font-weight="bold" letter-spacing="1.1" fill="#4ade80">&#10003; CERTIFIED</text>
+    <text x="30" y="90" font-family="Verdana,DejaVu Sans,sans-serif" font-size="24" font-weight="bold" fill="#f0f6fc">Ethical AI Masterclass</text>
+    <text x="30" y="137" font-family="Verdana,DejaVu Sans,sans-serif" font-size="12.5" fill="#8b949e">AI whispering, ethical guardrails, and peer programming with an LLM</text>
+    <text x="30" y="165" font-family="Verdana,DejaVu Sans,sans-serif" font-size="11" letter-spacing="1.2" fill="#fe428e">6 OF 8</text>
+    <text x="490" y="165" text-anchor="end" font-family="Verdana,DejaVu Sans,sans-serif" font-size="11" letter-spacing="1.2" fill="#8b949e">MASTERCLASS · 2026</text>
+  </g>
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;0;0;0;0;0;1;0" keyTimes="0;0.125;0.25;0.375;0.5;0.625;0.75;0.875"
+             calcMode="discrete" dur="24s" repeatCount="indefinite"/>
+    <text x="30" y="42" font-family="Verdana,DejaVu Sans,sans-serif" font-size="11.5" font-weight="bold" letter-spacing="2.4" fill="#6ee7f9">MINDENIOUS</text>
+    <rect x="384" y="26" width="106" height="23" rx="11.5" fill="#052e16" stroke="#22c55e" stroke-width="1"/>
+    <text x="437" y="41.5" text-anchor="middle" font-family="Verdana,DejaVu Sans,sans-serif" font-size="10" font-weight="bold" letter-spacing="1.1" fill="#4ade80">&#10003; CERTIFIED</text>
+    <text x="30" y="90" font-family="Verdana,DejaVu Sans,sans-serif" font-size="24" font-weight="bold" fill="#f0f6fc">Data Analytics Internship</text>
+    <text x="30" y="137" font-family="Verdana,DejaVu Sans,sans-serif" font-size="12.5" fill="#8b949e">Two months turning messy marketing data into decisions</text>
+    <text x="30" y="165" font-family="Verdana,DejaVu Sans,sans-serif" font-size="11" letter-spacing="1.2" fill="#fe428e">7 OF 8</text>
+    <text x="490" y="165" text-anchor="end" font-family="Verdana,DejaVu Sans,sans-serif" font-size="11" letter-spacing="1.2" fill="#8b949e">INTERNSHIP · 2026</text>
+  </g>
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;0;0;0;0;0;0;1" keyTimes="0;0.125;0.25;0.375;0.5;0.625;0.75;0.875"
+             calcMode="discrete" dur="24s" repeatCount="indefinite"/>
+    <text x="30" y="42" font-family="Verdana,DejaVu Sans,sans-serif" font-size="11.5" font-weight="bold" letter-spacing="2.4" fill="#6ee7f9">MINDENIOUS</text>
+    <rect x="384" y="26" width="106" height="23" rx="11.5" fill="#052e16" stroke="#22c55e" stroke-width="1"/>
+    <text x="437" y="41.5" text-anchor="middle" font-family="Verdana,DejaVu Sans,sans-serif" font-size="10" font-weight="bold" letter-spacing="1.1" fill="#4ade80">&#10003; CERTIFIED</text>
+    <text x="30" y="90" font-family="Verdana,DejaVu Sans,sans-serif" font-size="24" font-weight="bold" fill="#f0f6fc">Certificate of Excellence</text>
+    <text x="30" y="137" font-family="Verdana,DejaVu Sans,sans-serif" font-size="12.5" fill="#8b949e">Awarded for standout performance across the analytics track</text>
+    <text x="30" y="165" font-family="Verdana,DejaVu Sans,sans-serif" font-size="11" letter-spacing="1.2" fill="#fe428e">8 OF 8</text>
+    <text x="490" y="165" text-anchor="end" font-family="Verdana,DejaVu Sans,sans-serif" font-size="11" letter-spacing="1.2" fill="#8b949e">EXCELLENCE · 2026</text>
   </g>
       </g>
     </g>
