@@ -255,7 +255,7 @@ Off the clock, I automate my own hobbies too — my **ORB Strategy Backtester** 
 
 <div align="center">
 
-<img src="./assets/cert-showcase.svg" width="520" height="190" alt="SQL (Advanced) — HackerRank skill certification"/>
+<a href="https://www.hackerrank.com/certificates/fe09256b446c"><img src="./assets/cert-showcase.svg" width="520" height="190" alt="SQL (Advanced) — HackerRank skill certification"/></a>
 
 <br/>
 
@@ -267,7 +267,7 @@ Off the clock, I automate my own hobbies too — my **ORB Strategy Backtester** 
 
 | | Credential | What it actually proves |
 |:--:|:--|:--|
-| 🗄️ | **SQL (Advanced)** · HackerRank | Window functions, CTEs, and query plans I can defend |
+| 🗄️ | **[SQL (Advanced)](https://www.hackerrank.com/certificates/fe09256b446c)** · HackerRank | Window functions, CTEs, and query plans I can defend |
 | 🔍 | **SQL (Intermediate)** · HackerRank | Joins and aggregation that stay fast past the toy-dataset mark |
 | 🧩 | **Problem Solving** · HackerRank | Choosing the data structure *before* writing the loop |
 | 🧠 | **Critical Thinking** · HackerRank | Reading the requirement nobody bothered to write down |
