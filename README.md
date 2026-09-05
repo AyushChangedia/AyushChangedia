@@ -368,7 +368,9 @@ Off the clock, I automate my own hobbies too — my **ORB Strategy Backtester** 
 
 ### 💬 Quote I Code By
 
-<img src="./assets/quote.svg" width="560" height="74" alt="The limit is only your imagination"/>
+> *"First, solve the problem. Then, write the code."* — John Johnson
+
+<img src="./assets/quote.svg" width="560" height="95" alt="The limit is only your imagination — Tony Robbins"/>
 
 </div>
 
