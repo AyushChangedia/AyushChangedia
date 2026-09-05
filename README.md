@@ -250,6 +250,43 @@ Off the clock, I automate my own hobbies too — my **ORB Strategy Backtester** 
 <!-- ========================= ✂️ DIVIDER ========================= -->
 <img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6,11,20&height=3" alt="divider"/>
 
+<!-- ========================= 🎓 CERTIFICATIONS ========================= -->
+## 🎓 &nbsp;Certifications
+
+<div align="center">
+
+<img src="./assets/cert-showcase.svg" width="520" height="190" alt="SQL (Advanced) — HackerRank skill certification"/>
+
+<br/>
+
+<sub><i>Anyone can paste a certificate name. Here's what each one actually bought me.</i></sub>
+
+</div>
+
+<div align="center">
+
+| | Credential | What it actually proves |
+|:--:|:--|:--|
+| 🗄️ | **SQL (Advanced)** · HackerRank | Window functions, CTEs, and query plans I can defend |
+| 🔍 | **SQL (Intermediate)** · HackerRank | Joins and aggregation that stay fast past the toy-dataset mark |
+| 🧩 | **Problem Solving** · HackerRank | Choosing the data structure *before* writing the loop |
+| 🧠 | **Critical Thinking** · HackerRank | Reading the requirement nobody bothered to write down |
+
+</div>
+
+<br/>
+
+<div align="center">
+
+<sub><b>📜 &nbsp;Earned on the job</b></sub>
+
+<sub>AI Engineering — <b>NeuralForge Labs</b> &nbsp;·&nbsp; Software Development — <b>yteNest Technologies</b> &nbsp;·&nbsp; Data Analytics — <b>Mindenious</b></sub>
+
+</div>
+
+<!-- ========================= ✂️ DIVIDER ========================= -->
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6,11,20&height=3" alt="divider"/>
+
 <!-- ========================= 🎯 CURRENT FOCUS ========================= -->
 ## <img src="https://media.giphy.com/media/hpXdHPfFI5wPjEmvIw/giphy.gif" width="28"> &nbsp;Currently Leveling Up
 
