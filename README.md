@@ -255,7 +255,7 @@ Off the clock, I automate my own hobbies too — my **ORB Strategy Backtester** 
 
 <div align="center">
 
-<a href="https://www.hackerrank.com/certificates/fe09256b446c"><img src="./assets/cert-showcase.svg" width="520" height="190" alt="SQL (Advanced) — HackerRank skill certification"/></a>
+<img src="./assets/cert-showcase.svg" width="520" height="190" alt="HackerRank certifications: SQL (Advanced), SQL (Intermediate), Problem Solving, Critical Thinking"/>
 
 <br/>
 
