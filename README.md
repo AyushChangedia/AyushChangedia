@@ -368,9 +368,7 @@ Off the clock, I automate my own hobbies too — my **ORB Strategy Backtester** 
 
 ### 💬 Quote I Code By
 
-> *"First, solve the problem. Then, write the code."* — John Johnson
-
-<img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical" alt="Random Dev Quote"/>
+<img src="./assets/quote.svg" width="560" height="74" alt="The limit is only your imagination"/>
 
 </div>
 

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="74" viewBox="0 0 560 74" role="img" aria-label="The limit is only your imagination">
+  <title>The limit is only your imagination</title>
+
+  <!-- card -->
+  <rect x="0.75" y="0.75" width="558.5" height="72.5" rx="5"
+        fill="#141321" stroke="#a9fef7" stroke-opacity="0.55" stroke-width="1.5"/>
+
+  <!-- flanking quote marks, sharing one baseline -->
+  <text x="96" y="52" font-family="Georgia,DejaVu Serif,serif" font-size="40" fill="#fe428e">&#8220;</text>
+  <text x="446" y="52" font-family="Georgia,DejaVu Serif,serif" font-size="40" fill="#fe428e">&#8221;</text>
+
+  <!-- quote -->
+  <text x="280" y="44" text-anchor="middle"
+        font-family="Georgia,DejaVu Serif,serif" font-style="italic"
+        font-size="19" fill="#a9fef7">The limit is only your imagination</text>
+</svg>
