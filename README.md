@@ -169,89 +169,6 @@ Off the clock, I automate my own hobbies too — my **ORB Strategy Backtester** 
 <!-- ========================= ✂️ DIVIDER ========================= -->
 <img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6,11,20&height=3" alt="divider"/>
 
-<!-- ========================= 🚀 FEATURED PROJECTS ========================= -->
-## <img src="https://media.giphy.com/media/mGcNjsfWAjY5AEZNw6/giphy.gif" width="28"> &nbsp;Featured Projects
-
-<table>
-<tr>
-<td width="50%" valign="top">
-
-### 🔥 Résumé Roaster
-> Feed it a résumé, get back an honest LLM roast — strengths, weak spots, and the buzzwords worth cutting.
-
-**Stack:** `Python` · `OpenAI APIs` · `LLMs`
-
-**Highlights**
-- Analyzes a résumé end-to-end with an LLM feedback pipeline
-- Calls out fluff and thin bullets, then suggests sharper rewrites
-- Honest, actionable feedback instead of "looks fine to me"
-
-**Impact:** Turns vague self-review into blunt, useful critique.
-
-[![Repo](https://img.shields.io/badge/View%20Repo-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/AyushChangedia/resume-roaster)
-
-</td>
-<td width="50%" valign="top">
-
-### 📈 ORB Strategy Backtester
-> Opening-range-breakout backtesting on Bank Nifty futures.
-
-**Stack:** `Python` · `Pine Script v5` · `TradingView MCP`
-
-**Highlights**
-- Custom **TradingView MCP** integration for automated backtests
-- 6-month, **120-trade** run at a **57.5% win rate**
-- Optimization loop that pinned commission drag as the #1 P&L leak
-
-**Impact:** Informed a lower-frequency, higher-net-return variant.
-
-<!-- Replace REPO_ORB with the repo URL -->
-[![Repo](https://img.shields.io/badge/View%20Repo-181717?style=for-the-badge&logo=github&logoColor=white)](REPO_ORB)
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-### 🏙️ Git City
-> Paste a GitHub repo URL and watch its history build itself, commit by commit, as a 3D city.
-
-**Stack:** `JavaScript` · `three.js` · `WebGL` · `GitHub API`
-
-**Highlights**
-- Every file is a building, every folder a district, split across a river
-- Height = line count; buildings glow on commit, then cool back over 20 commits
-- ~45s of scrubbable playback for any repo — no backend, no build step
-
-**Impact:** Turns a `git log` into a skyline you can actually read.
-
-[![Repo](https://img.shields.io/badge/View%20Repo-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/AyushChangedia/Git-City)
-
-</td>
-<td width="50%" valign="top">
-
-### 🔌 Scalable Commerce APIs
-> Production-style REST APIs for product, order & payment flows.
-
-**Stack:** `Node.js` · `Express.js` · `PostgreSQL` · `JWT`
-
-**Highlights**
-- Product / order / payment workflow endpoints
-- JWT auth + input validation for a hardened surface
-- Optimized SQL queries for faster, safer responses
-
-**Impact:** Improved API performance and security.
-
-<!-- Built @ yteNest Technologies -->
-[![Internship](https://img.shields.io/badge/Internship%20Work-0A66C2?style=for-the-badge&logo=briefcase&logoColor=white)](#)
-
-</td>
-</tr>
-</table>
-
-<!-- ========================= ✂️ DIVIDER ========================= -->
-<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6,11,20&height=3" alt="divider"/>
-
 <!-- ========================= 🏆 ACHIEVEMENTS ========================= -->
 ## <img src="https://media.giphy.com/media/QYCFETlxeEHDN76BwK/giphy.gif" width="30"> &nbsp;Achievements & Milestones
 
@@ -359,6 +276,89 @@ Off the clock, I automate my own hobbies too — my **ORB Strategy Backtester** 
 ![Open Source](https://img.shields.io/badge/🌱%20Open%20Source-EC4899?style=for-the-badge&labelColor=0D1117)
 
 </div>
+
+<!-- ========================= ✂️ DIVIDER ========================= -->
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6,11,20&height=3" alt="divider"/>
+
+<!-- ========================= 🚀 FEATURED PROJECTS ========================= -->
+## <img src="https://media.giphy.com/media/mGcNjsfWAjY5AEZNw6/giphy.gif" width="28"> &nbsp;Featured Projects
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+### 🔥 Résumé Roaster
+> Feed it a résumé, get back an honest LLM roast — strengths, weak spots, and the buzzwords worth cutting.
+
+**Stack:** `Python` · `OpenAI APIs` · `LLMs`
+
+**Highlights**
+- Analyzes a résumé end-to-end with an LLM feedback pipeline
+- Calls out fluff and thin bullets, then suggests sharper rewrites
+- Honest, actionable feedback instead of "looks fine to me"
+
+**Impact:** Turns vague self-review into blunt, useful critique.
+
+[![Repo](https://img.shields.io/badge/View%20Repo-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/AyushChangedia/resume-roaster)
+
+</td>
+<td width="50%" valign="top">
+
+### 📈 ORB Strategy Backtester
+> Opening-range-breakout backtesting on Bank Nifty futures.
+
+**Stack:** `Python` · `Pine Script v5` · `TradingView MCP`
+
+**Highlights**
+- Custom **TradingView MCP** integration for automated backtests
+- 6-month, **120-trade** run at a **57.5% win rate**
+- Optimization loop that pinned commission drag as the #1 P&L leak
+
+**Impact:** Informed a lower-frequency, higher-net-return variant.
+
+<!-- Replace REPO_ORB with the repo URL -->
+[![Repo](https://img.shields.io/badge/View%20Repo-181717?style=for-the-badge&logo=github&logoColor=white)](REPO_ORB)
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### 🏙️ Git City
+> Paste a GitHub repo URL and watch its history build itself, commit by commit, as a 3D city.
+
+**Stack:** `JavaScript` · `three.js` · `WebGL` · `GitHub API`
+
+**Highlights**
+- Every file is a building, every folder a district, split across a river
+- Height = line count; buildings glow on commit, then cool back over 20 commits
+- ~45s of scrubbable playback for any repo — no backend, no build step
+
+**Impact:** Turns a `git log` into a skyline you can actually read.
+
+[![Repo](https://img.shields.io/badge/View%20Repo-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/AyushChangedia/Git-City)
+
+</td>
+<td width="50%" valign="top">
+
+### 🔌 Scalable Commerce APIs
+> Production-style REST APIs for product, order & payment flows.
+
+**Stack:** `Node.js` · `Express.js` · `PostgreSQL` · `JWT`
+
+**Highlights**
+- Product / order / payment workflow endpoints
+- JWT auth + input validation for a hardened surface
+- Optimized SQL queries for faster, safer responses
+
+**Impact:** Improved API performance and security.
+
+<!-- Built @ yteNest Technologies -->
+[![Internship](https://img.shields.io/badge/Internship%20Work-0A66C2?style=for-the-badge&logo=briefcase&logoColor=white)](#)
+
+</td>
+</tr>
+</table>
 
 <!-- ========================= ✂️ DIVIDER ========================= -->
 <img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6,11,20&height=3" alt="divider"/>
