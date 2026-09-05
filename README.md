@@ -255,7 +255,7 @@ Off the clock, I automate my own hobbies too — my **ORB Strategy Backtester** 
 
 <div align="center">
 
-<img src="./assets/cert-showcase.svg" width="520" height="190" alt="Certifications: Data Analytics Internship, SQL (Advanced), C Programming (Intermediate), Problem Solving, Certificate of Excellence, SQL (Intermediate), Ethical AI Masterclass"/>
+<img src="./assets/cert-showcase.svg" width="520" height="190" alt="Certifications: Data Analytics Internship, SQL (Advanced), Internshala Student Partner, Problem Solving, Fundraising Intern, Certificate of Excellence, SQL (Intermediate), C Programming (Intermediate), Ethical AI Masterclass"/>
 
 <br/>
 
@@ -269,10 +269,12 @@ Off the clock, I automate my own hobbies too — my **ORB Strategy Backtester** 
 |:--:|:--|:--|
 | 📊 | **[Data Analytics Internship](./certificates/Data_Analytics_Internship_Mindenious.pdf)** · Mindenious | Two months turning messy marketing data into decisions |
 | 🗄️ | **[SQL (Advanced)](https://www.hackerrank.com/certificates/fe09256b446c)** · HackerRank | Window functions, CTEs, and query plans I can defend |
-| 🔧 | **[C Programming (Intermediate)](./certificates/C_Programming_Intermediate_Alabama_University.pdf)** · Alabama University | Pointers, memory, and the discipline of manual allocation |
+| 🤝 | **Internshala Student Partner** · Internshala | Campus outreach and social campaigns for an internship platform |
 | 🧩 | **[Problem Solving](https://www.hackerrank.com/certificates/e59db1a2994a)** · HackerRank | Choosing the data structure *before* writing the loop |
+| 💙 | **Fundraising Intern** · NayePankh Foundation | Mobilising funds remotely for an education-access nonprofit |
 | 🏅 | **[Certificate of Excellence](./certificates/Certificate_of_Excellence_Mindenious.pdf)** · Mindenious | Awarded for standout performance across the analytics track |
 | 🔍 | **[SQL (Intermediate)](https://www.hackerrank.com/certificates/1f91721770f5)** · HackerRank | Joins and aggregation that stay fast past the toy-dataset mark |
+| 🔧 | **[C Programming (Intermediate)](./certificates/C_Programming_Intermediate_Alabama_University.pdf)** · Alabama University | Pointers, memory, and the discipline of manual allocation |
 | 🤖 | **[Ethical AI Masterclass](./certificates/Ethical_AI_Masterclass_Cybrent_MIT_WPU.pdf)** · Cybrent × MIT-WPU R.I.D.E 2026 | AI whispering, ethical guardrails, and peer programming with an LLM |
 
 </div>
