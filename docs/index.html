@@ -8,6 +8,59 @@
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet"/>
+<link rel="preconnect" href="https://cdnjs.cloudflare.com"/>
+<link rel="stylesheet" href="./assets/portfolio-intro.css"/>
+<script>
+/* ─── PortfolioIntro · configuration ──────────────────────────────────────
+   INTRO_ALWAYS_PLAY   true  → replay the opening on every load (development)
+   INTRO_SPEED         1     → designed pace. 1.3 = 30% faster, 0.8 = slower.
+   Force one replay without editing this file: add ?intro to the URL.       */
+var INTRO_ALWAYS_PLAY = false;
+var INTRO_SPEED       = 1;
+
+(function(){
+  var ROOT=document.documentElement, KEY='ayush-intro-played';
+  var forced=INTRO_ALWAYS_PLAY||/[?&]intro\b/.test(location.search), seen=false;
+  try{seen=sessionStorage.getItem(KEY)==='1';}catch(e){}
+  if(seen&&!forced) return;                       /* already played this session */
+  try{sessionStorage.setItem(KEY,'1');}catch(e){}
+
+  var restoration=history.scrollRestoration;
+  try{history.scrollRestoration='manual';}catch(e){}
+  scrollTo(0,0);
+
+  function held(){return document.querySelectorAll('body > :not(#portfolio-intro)');}
+  ROOT.classList.add('pi-armed','pi-hold');       /* applied before first paint */
+
+  window.PORTFOLIO_INTRO={
+    SPEED:INTRO_SPEED,
+    running:false,                                /* set by the module once it takes over */
+    disarm:function(){
+      ROOT.classList.remove('pi-armed','pi-hold');
+      try{history.scrollRestoration=restoration||'auto';}catch(e){}
+      held().forEach(function(el){el.inert=false;});
+    }
+  };
+  /* keep focus and clicks off the portfolio while the overlay is up */
+  addEventListener('DOMContentLoaded',function(){
+    if(ROOT.classList.contains('pi-armed')) held().forEach(function(el){el.inert=true;});
+  });
+  /* failsafe — a blocked CDN or a script error must never strand the page.
+     6s if the module never took over; 14s as an absolute backstop for a very
+     slow connection where GSAP and the webfont arrive late.               */
+  function bail(force){
+    if(!ROOT.classList.contains('pi-armed')) return;
+    if(!force&&window.PORTFOLIO_INTRO.running) return;
+    var host=document.getElementById('portfolio-intro');
+    if(host&&host.parentNode) host.parentNode.removeChild(host);
+    window.PORTFOLIO_INTRO.disarm();
+  }
+  setTimeout(function(){bail(false);},6000);
+  setTimeout(function(){bail(true);},14000);
+})();
+</script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script defer src="./assets/portfolio-intro.js"></script>
 <style>
 :root{
   --bg:#07070c; --bg2:#0c0c15; --card:rgba(255,255,255,.03); --line:rgba(255,255,255,.09);
@@ -162,6 +215,8 @@ footer .socials a:hover{color:var(--cyan)}
 </style>
 </head>
 <body>
+<div id="portfolio-intro" aria-hidden="true" role="presentation"></div>
+
 <div class="bg-fx"><div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div></div>
 <div class="grid-fx"></div>
 <div id="glow"></div>

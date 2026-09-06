@@ -1,0 +1,96 @@
+/* ══════════════════════════════════════════════════════════════════════════
+   PortfolioIntro — cinematic opening sequence for ayushchangedia.github.io
+   Paired with assets/portfolio-intro.js.
+
+   Nothing in this file applies until the boot script in index.html adds
+   `pi-armed` to <html>. With JavaScript disabled — or when the intro has
+   already played this session — the portfolio renders exactly as before.
+   ══════════════════════════════════════════════════════════════════════════ */
+
+#portfolio-intro{display:none}
+
+/* ── the portfolio is held (rendered, but blank) behind the overlay ────── */
+html.pi-armed,html.pi-armed body{overflow:hidden}
+html.pi-armed{background:var(--bg,#07070c)}   /* no white flash before first paint */
+html.pi-hold #nav,
+html.pi-hold .hero>*{opacity:0}
+/* the site's aurora blobs are three blur(90px) circles on a permanent
+   keyframe loop — invisible behind the opaque overlay, so stop painting
+   them until the moment the portfolio is handed back */
+html.pi-hold .bg-fx{visibility:hidden}
+
+/* ── overlay shell: the "viewport window" everything is cropped by ─────── */
+html.pi-armed #portfolio-intro{
+  display:block;position:fixed;inset:0;z-index:9000;overflow:hidden;
+  background:var(--bg,#07070c);
+  /* final lockup metrics — every camera distance is derived from these */
+  --pi-size:clamp(66px,13.5vw,196px);
+  --pi-sub:clamp(20px,3.2vw,42px);
+  /* authored as a polygon so the hand-off can tween it into an angled wipe */
+  -webkit-clip-path:polygon(-12% -14%,112% -14%,112% 114%,-12% 114%);
+          clip-path:polygon(-12% -14%,112% -14%,112% 114%,-12% 114%);
+}
+@media(max-width:760px){
+  html.pi-armed #portfolio-intro{--pi-size:clamp(80px,27vw,132px);--pi-sub:clamp(17px,5.2vw,28px)}
+}
+
+/* The wordmark lays out at its resting size before the script has posed the
+   camera. Held back until the opening frame is set, or the finished lockup
+   flashes on screen first. */
+#portfolio-intro.pi-prep .pi-blur,
+#portfolio-intro.pi-prep .pi-subwrap,
+#portfolio-intro.pi-prep .pi-seam{visibility:hidden}
+
+/* ── ambient layers (borrowed from the site's own aurora + grid) ───────── */
+.pi-glow{position:absolute;left:50%;top:50%;width:104vmax;height:104vmax;
+  transform:translate(-50%,-50%);pointer-events:none;will-change:transform,opacity;
+  background:radial-gradient(circle,rgba(99,102,241,.17),rgba(168,85,247,.07) 38%,transparent 66%)}
+.pi-grid{position:absolute;inset:-25%;pointer-events:none;will-change:opacity;
+  background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),
+                   linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);
+  background-size:44px 44px;
+  -webkit-mask-image:radial-gradient(ellipse 68% 58% at 50% 50%,#000 28%,transparent 100%);
+          mask-image:radial-gradient(ellipse 68% 58% at 50% 50%,#000 28%,transparent 100%)}
+
+/* ── the camera stage: oversized typography lives in here ─────────────── */
+/* Motion blur is applied to .pi-blur, never to .pi-stage: the stage is
+   scaled up to ~25x, and a filter on it would ask the compositor for an
+   offscreen buffer 25x the viewport. Clipping the wrapper keeps that
+   buffer viewport-sized. */
+.pi-blur{position:absolute;inset:0;overflow:hidden}
+.pi-stage{position:absolute;inset:0;display:grid;place-items:center;
+  transform-origin:50% 50%;backface-visibility:hidden}
+
+.pi-word{
+  font-family:'Space Grotesk',system-ui,sans-serif;font-weight:700;
+  font-size:var(--pi-size);line-height:.82;letter-spacing:-.055em;
+  color:#f4f5fa;white-space:nowrap;
+  /* no will-change: letting the giant glyphs repaint keeps them razor sharp
+     at 25× instead of scaling a cached bitmap */
+}
+.pi-word span{display:inline-block}
+/* The comma is the satellite element — the site's own accent, echoing the
+   gradient "." in the nav logo. Solid, not background-clip:text: clipping a
+   background to a glyph forces an offscreen mask the size of the *scaled*
+   box, and this one is scaled by ~25x. */
+.pi-comma{color:var(--violet,#a855f7)}
+
+/* ── the second line, revealed through a mask once the lockup lands ───── */
+.pi-subwrap{position:absolute;inset:0;display:grid;place-items:center;pointer-events:none}
+.pi-sub{overflow:hidden;padding:.06em .1em .22em;
+  transform:translateY(calc(var(--pi-size) * .66))}
+.pi-sub b{display:block;will-change:transform;font-family:'Space Grotesk',system-ui,sans-serif;font-weight:700;
+  font-size:var(--pi-sub);letter-spacing:-.02em;line-height:1.1;color:var(--txt,#e8e9f0)}
+.pi-sub b i{font-style:normal;background:var(--grad,linear-gradient(135deg,#6366f1,#a855f7 50%,#22d3ee));
+  -webkit-background-clip:text;background-clip:text;
+  -webkit-text-fill-color:transparent;color:transparent}
+
+/* ── light seam that rides the curtain edge during the hand-off ───────── */
+.pi-seam{position:absolute;left:-20vw;top:0;width:140vw;height:2px;opacity:0;will-change:transform,opacity;
+  background:linear-gradient(90deg,transparent,#6366f1 18%,#a855f7 50%,#22d3ee 82%,transparent);
+  filter:blur(1.5px)}
+
+/* ── reduced motion: no cinematic move, just a held card and a fade ────── */
+@media(prefers-reduced-motion:reduce){
+  .pi-grid{opacity:.5}
+}
