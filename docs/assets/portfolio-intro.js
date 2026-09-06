@@ -102,7 +102,7 @@
     });
   }
 
-  /* ── no GSAP (offline / CDN blocked): reveal immediately ──────────────── */
+  /* ── no GSAP (script failed to load): reveal immediately ─────────────── */
   var gsap = window.gsap;
   if (!gsap) { release(); finish(); return; }
 
