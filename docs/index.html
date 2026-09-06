@@ -29,15 +29,21 @@ var INTRO_SPEED       = 1;
   scrollTo(0,0);
 
   function held(){return document.querySelectorAll('body > :not(#portfolio-intro)');}
-  ROOT.classList.add('pi-armed','pi-hold');       /* applied before first paint */
+  ROOT.classList.add('pi-armed','pi-hold','pi-prep','pi-dim');  /* before first paint */
 
   window.PORTFOLIO_INTRO={
     SPEED:INTRO_SPEED,
     running:false,                                /* set by the module once it takes over */
-    disarm:function(){
-      ROOT.classList.remove('pi-armed','pi-hold');
+    /* the overlay is gone and the page is usable again — but the hero
+       content stays held until it cascades in */
+    ungate:function(){
+      ROOT.classList.remove('pi-armed','pi-prep','pi-dim','pi-fly');
       try{history.scrollRestoration=restoration||'auto';}catch(e){}
       held().forEach(function(el){el.inert=false;});
+    },
+    disarm:function(){
+      window.PORTFOLIO_INTRO.ungate();
+      ROOT.classList.remove('pi-hold');
     }
   };
   /* keep focus and clicks off the portfolio while the overlay is up */
@@ -236,7 +242,7 @@ footer .socials a:hover{color:var(--cyan)}
 <!-- HERO -->
 <header class="hero" id="top">
   <div class="hero-badge reveal"><span class="dot"></span> Open to Internships &amp; Collaborations</div>
-  <h1 class="reveal">Hi, I'm <span class="g">Ayush</span>.</h1>
+  <h1 class="reveal"><span class="h-hi">Hi<span class="h-comma">,</span></span> <span class="h-name">I'm <span class="g">Ayush</span>.</span></h1>
   <div class="type-wrap reveal"><span id="typed"></span><span class="cursor"></span></div>
   <p class="lede reveal">I build <b>AI systems</b>, <b>backend applications</b>, and <b>automation</b> that save humans from repetitive work — from LLM-powered tools to scalable APIs and trading bots that backtest while I sleep.</p>
   <div class="cta-row reveal">
