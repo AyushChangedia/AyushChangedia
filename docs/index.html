@@ -167,7 +167,7 @@ nav.scrolled{border-bottom:1px solid var(--line);background:rgba(7,7,12,.8)}
 @media(max-width:760px){.nav-links{display:none}.menu-btn{display:block}}
 
 /* layout */
-section{max-width:1080px;margin:0 auto;padding:clamp(70px,10vw,120px) clamp(20px,5vw,40px)}
+section{max-width:1080px;margin:0 auto;padding:clamp(50px,7vw,84px) clamp(20px,5vw,40px)}
 .eyebrow{font-family:'JetBrains Mono';font-size:13px;letter-spacing:2px;text-transform:uppercase;color:var(--cyan);margin-bottom:14px;display:flex;align-items:center;gap:10px}
 .eyebrow::before{content:'';width:28px;height:1px;background:var(--cyan)}
 h2.title{font-family:'Space Grotesk';font-size:clamp(30px,5vw,44px);font-weight:700;letter-spacing:-1px;margin-bottom:14px}
@@ -191,10 +191,6 @@ h2.title{font-family:'Space Grotesk';font-size:clamp(30px,5vw,44px);font-weight:
 .btn-primary:hover{background-position:100% 0;transform:translateY(-2px);box-shadow:0 12px 34px rgba(99,102,241,.4)}
 .btn-ghost{border-color:var(--line);color:var(--txt);background:rgba(255,255,255,.03)}
 .btn-ghost:hover{border-color:var(--violet);transform:translateY(-2px);box-shadow:0 10px 30px rgba(168,85,247,.22)}
-.scroll-hint{position:absolute;bottom:34px;left:50%;transform:translateX(-50%);color:var(--dim);font-size:12px;font-family:'JetBrains Mono';letter-spacing:2px;display:flex;flex-direction:column;align-items:center;gap:8px}
-.scroll-hint .mouse{width:22px;height:34px;border:2px solid var(--line);border-radius:12px;position:relative}
-.scroll-hint .mouse::before{content:'';position:absolute;top:7px;left:50%;transform:translateX(-50%);width:3px;height:7px;background:var(--cyan);border-radius:2px;animation:scroll 1.6s infinite}
-@keyframes scroll{0%{opacity:1;top:7px}100%{opacity:0;top:16px}}
 
 /* stats */
 .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:20px}
@@ -314,7 +310,6 @@ footer .socials a:hover{color:var(--cyan)}
     <div class="stat"><div class="n">57.5%</div><div class="l">Trading-bot win rate</div></div>
     <div class="stat"><div class="n">8.2</div><div class="l">CGPA / 10</div></div>
   </div>
-  <div class="scroll-hint"><div class="mouse"></div>SCROLL</div>
 </header>
 
 <!-- ABOUT -->
