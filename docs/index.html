@@ -316,9 +316,82 @@ footer .socials a:hover{color:var(--cyan)}
   <div class="cta-row reveal">
     <a href="#projects" class="btn btn-primary fx-dragon">
       <span class="dg-lane" aria-hidden="true">
-        <span class="dg"><svg class="dg-svg" viewBox="0 0 64 40" aria-hidden="true"><path class="far" d="M31 18C27 8 19 2.5 10.5 3.5 16.5 8.5 21 14 23.5 21.5 26 20.2 28.6 19 31 18Z"/><path class="body" d="M5.5 31.5C12 30.5 18.5 28.6 24.5 25.4L27 30C20.6 33 13.6 34.6 6 34.8L1.5 36.4Z"/><path class="body" d="M21 25.5C25.4 20 31.8 16.6 39.2 15.6 45.4 14.8 50.6 15.8 54.6 18.2 50.4 23 44.2 26 37 27.2 30.6 28.2 25.2 27.6 21 25.5Z"/><path class="limb" d="M29.5 26.6 27.2 32.4 30.8 30.8 32 27.2Z"/><path class="limb" d="M38 25.6 38.4 31.4 41.6 29.2 40.6 25.8Z"/><path class="body" d="M45.5 17.2C49.4 12.6 53.8 9.4 59 9.2L62.6 11.4 57.6 13.6C54.6 14.8 51 16.8 48 19.2Z"/><path class="body" d="M55.5 9.6 58.5 4.6 59.8 9.3Z"/><circle class="eye" cx="56.6" cy="11.6" r="1.05"/><path class="wing" d="M33 18.5C29 7 20.5 0.6 11 1.6 17.6 8 22.8 14.4 25.8 22.6 28 21 30.5 19.6 33 18.5Z"/></svg><span class="dg-flame"></span></span>
+        <span class="dg"><svg class="dg-svg" viewBox="0 0 148 54" aria-hidden="true">
+          <defs>
+            <linearGradient id="dgBody" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#c4b5fd"/><stop offset=".45" stop-color="#8b5cf6"/><stop offset="1" stop-color="#4c1d95"/>
+            </linearGradient>
+            <linearGradient id="dgWingG" x1=".1" y1="0" x2=".55" y2="1">
+              <stop offset="0" stop-color="#e9d5ff"/><stop offset=".45" stop-color="#a78bfa"/><stop offset="1" stop-color="#5b21b6"/>
+            </linearGradient>
+            <linearGradient id="dgWingF" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#6d28d9"/><stop offset="1" stop-color="#2e1065"/>
+            </linearGradient>
+            <radialGradient id="dgCoreG" cx=".07" cy=".5" r=".95">
+              <stop offset="0" stop-color="#fff"/><stop offset=".14" stop-color="#fdf4ff"/>
+              <stop offset=".34" stop-color="#f0abfc"/><stop offset=".58" stop-color="#c084fc"/>
+              <stop offset=".8" stop-color="#7c3aed" stop-opacity=".7"/><stop offset="1" stop-color="#4338ca" stop-opacity="0"/>
+            </radialGradient>
+            <radialGradient id="dgHotG" cx=".04" cy=".5" r=".9">
+              <stop offset="0" stop-color="#fff"/><stop offset=".18" stop-color="#fdf4ff"/>
+              <stop offset=".42" stop-color="#f5d0fe"/><stop offset=".68" stop-color="#e879f9" stop-opacity=".8"/>
+              <stop offset="1" stop-color="#c084fc" stop-opacity="0"/>
+            </radialGradient>
+            <radialGradient id="dgOuterG" cx=".05" cy=".5" r="1">
+              <stop offset="0" stop-color="#f5d0fe" stop-opacity=".9"/><stop offset=".32" stop-color="#e879f9" stop-opacity=".62"/>
+              <stop offset=".62" stop-color="#a855f7" stop-opacity=".38"/><stop offset=".84" stop-color="#6366f1" stop-opacity=".16"/>
+              <stop offset="1" stop-color="#22d3ee" stop-opacity="0"/>
+            </radialGradient>
+            <filter id="dgFlux" x="-25%" y="-90%" width="170%" height="280%">
+              <feTurbulence type="fractalNoise" baseFrequency="0.028 0.062" numOctaves="3" seed="5" result="n">
+                <animate attributeName="baseFrequency" dur="3.3s" repeatCount="indefinite"
+                  values="0.028 0.062;0.046 0.05;0.032 0.07;0.028 0.062"/>
+              </feTurbulence>
+              <feDisplacementMap in="SourceGraphic" in2="n" scale="12" xChannelSelector="R" yChannelSelector="G"/>
+              <feGaussianBlur stdDeviation="0.45"/>
+            </filter>
+            <filter id="dgSmokeF" x="-60%" y="-140%" width="240%" height="380%">
+              <feTurbulence type="fractalNoise" baseFrequency="0.045" numOctaves="2" seed="9" result="sn"/>
+              <feDisplacementMap in="SourceGraphic" in2="sn" scale="7"/>
+              <feGaussianBlur stdDeviation="2.4"/>
+            </filter>
+          </defs>
+
+          <g class="dg-smoke" filter="url(#dgSmokeF)">
+            <ellipse cx="104" cy="20" rx="10" ry="4.5"/><ellipse cx="120" cy="18" rx="12" ry="5.5"/><ellipse cx="136" cy="16" rx="14" ry="6.5"/>
+          </g>
+
+          <g class="dg-plume" filter="url(#dgFlux)">
+            <path class="fl-out" fill="url(#dgOuterG)" d="M62 12C81 5 107 8 141 21 113 31 87 32 68 22 64.5 20 62 15.5 62 12Z"/>
+            <path class="fl-mid" fill="url(#dgCoreG)" d="M62 12C78 6.5 99 9 126 19 103 27.5 82 28 67.5 20 64.5 18.4 62 14.8 62 12Z"/>
+            <path class="fl-core" fill="url(#dgHotG)" d="M62 12C73 9 87 10.6 104 17 87 22.4 73 22.6 65.5 17.4 63.4 16 62 13.6 62 12Z"/>
+            <path class="fl-lick fl-k1" fill="#f0abfc" opacity=".55" d="M64 11C79 5.5 98 6.6 122 14 100 17 82 17.6 68 14.6 65.6 14 64 12.4 64 11Z"/>
+            <path class="fl-lick fl-k2" fill="#c084fc" opacity=".45" d="M64 15C78 13 96 15 118 22 96 24 79 23 68 19.4 65.6 18.6 64 16.6 64 15Z"/>
+          </g>
+
+          <g class="dg-sparks">
+            <circle class="sp"     cx="88"  cy="14" r="1.1"/>
+            <circle class="sp sp2" cx="101" cy="20" r=".85"/>
+            <circle class="sp sp3" cx="113" cy="16" r="1"/>
+            <circle class="sp sp4" cx="79"  cy="18" r=".7"/>
+            <circle class="sp sp5" cx="124" cy="22" r=".9"/>
+            <circle class="sp sp6" cx="95"  cy="11" r=".78"/>
+          </g>
+
+          <g class="dg-anim">
+            <path class="dg-wf" fill="url(#dgWingF)" d="M33 19C28.5 8 20 1.5 10 2.8c5.6 4.6 9.4 9.6 11.8 15.4l3.2-1.4 2.4 3 3-2.2 2.2 2.6Z"/>
+            <path fill="url(#dgBody)" d="M4 33.5c7-1 13.6-3 19.6-6.2l2.6 4.8C19.6 35.4 12.4 37 4.6 37.2L0 39Z"/>
+            <path fill="url(#dgBody)" d="M20 27.5c4.6-5.8 11.4-9.4 19.4-10.5 6.6-.9 12.2.2 16.6 2.8-4.4 5.2-11 8.4-18.8 9.7-6.8 1.1-12.6.5-17.2-2Z"/>
+            <path fill="#7c3aed" d="M29.6 28.6 27 34.8l3.9-1.8 1.3-3.8Zm8.8-1 .4 6.2 3.5-2.4-1.1-3.6Z"/>
+            <path fill="url(#dgBody)" d="M46.5 18.6c4.2-5 9-8.6 14.6-8.9l4 2.4-5.4 2.4c-3.2 1.3-7.1 3.5-10.3 6.1Z"/>
+            <path fill="#a78bfa" d="M56 10.2 59.2 4.4 60.6 9.7Zm-3.6 1.4 1.2-5.4 2.1 4.3Z"/>
+            <path fill="#ddd6fe" d="M25 21.6l2.2-2.8 1.6 3Zm6.4-2.2 2-2.6 1.5 2.8Zm6.6-1.6 1.9-2.5 1.4 2.7Z"/>
+            <circle fill="#fbcfe8" cx="57.6" cy="12.3" r="1.15"/>
+            <path class="dg-wn" fill="url(#dgWingG)" d="M35 19.6C30.6 6.8 21.6-.4 11 .8c6.6 5.6 11.4 12 14.8 20.4l3.4-2.2 2.4 3.4 3.4-2.8Z"/>
+          </g>
+        </svg></span>
       </span>
-      <span class="dg-fire" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></span>
+      <span class="dg-glow" aria-hidden="true"></span>
       View My Work →
     </a>
     <a href="./Ayush_Changedia_Resume.pdf" class="btn btn-ghost fx-resume">

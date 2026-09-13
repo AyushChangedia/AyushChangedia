@@ -83,54 +83,72 @@
   background:radial-gradient(circle,rgba(255,255,255,.20),rgba(255,255,255,.05) 42%,transparent 66%)}
 .fx-venom.vn-done:hover .vn-rip{opacity:1}
 
-/* ---------- 3. View My Work: dragon strafes, its fire lights the button ---------- */
+/* ---------- 3. View My Work: dragon strafes, breathing live fire ---------- */
 .fx-dragon{position:relative;overflow:visible}
-/* clipped to the button's own width so the dragon never reaches its neighbours */
-.dg-lane{position:absolute;left:0;right:0;bottom:calc(100% - 8px);height:38px;
+/* clipped to this button's own width so the dragon never reaches its neighbours */
+.dg-lane{position:absolute;left:0;right:0;bottom:calc(100% - 10px);height:46px;
   pointer-events:none;z-index:6;overflow:hidden}
-.dg{position:absolute;left:0;top:2px;width:46px;height:30px;animation:dgFly 6.5s linear infinite}
-.dg-svg{width:46px;height:29px;overflow:visible;
-  filter:drop-shadow(0 0 4px rgba(168,85,247,.55));animation:dgBob 1.05s ease-in-out infinite alternate}
-.dg-svg .body{fill:#a855f7}
-.dg-svg .far{fill:#6d28d9}
-.dg-svg .limb{fill:#8b5cf6}
-.dg-svg .wing{fill:#c084fc;transform-box:fill-box;transform-origin:72% 96%;
-  animation:dgFlap .52s ease-in-out infinite alternate}
-.dg-svg .eye{fill:#f0abfc}
-/* breath: white-hot at the jaw, violet mid, cyan tips */
-.dg-flame{position:absolute;left:39px;top:11px;width:36px;height:15px;transform-origin:0 50%;
-  border-radius:52% 62% 54% 50%/50% 52% 48% 50%;filter:blur(1.1px);
-  background:radial-gradient(ellipse 108% 62% at 0% 50%,#fff 3%,#f5e8ff 11%,#d8b4fe 26%,
-    #a855f7 48%,rgba(99,102,241,.7) 68%,rgba(34,211,238,.45) 84%,transparent 95%);
-  animation:dgFlick .21s ease-in-out infinite alternate}
-@keyframes dgFly{0%{left:-52px}100%{left:100%}}
-@keyframes dgBob{from{transform:translateY(-2px) rotate(-5deg)}to{transform:translateY(2px) rotate(5deg)}}
-@keyframes dgFlap{from{transform:rotate(-26deg) scaleY(.72)}to{transform:rotate(12deg) scaleY(1.06)}}
-@keyframes dgFlick{from{transform:rotate(15deg) scaleX(.8) scaleY(.82);opacity:.78}to{transform:rotate(17deg) scaleX(1.18) scaleY(1.14);opacity:1}}
+.dg{position:absolute;left:0;top:0;width:104px;height:40px;animation:dgFly 7.2s linear infinite}
+.dg-svg{width:104px;height:40px;overflow:visible;animation:dgBob 1.5s ease-in-out infinite alternate}
 
-/* the button catches light where the breath lands — one tongue per pass */
-.dg-fire{position:absolute;left:0;right:0;top:-9px;height:18px;pointer-events:none;z-index:2;overflow:hidden}
-.dg-fire i{position:absolute;bottom:0;width:16px;height:18px;opacity:0;
-  border-radius:50% 50% 46% 46%/64% 64% 36% 36%;filter:blur(1.5px);
-  transform:scaleY(0);transform-origin:50% 100%;
-  background:linear-gradient(0deg,rgba(34,211,238,.9),rgba(168,85,247,.95) 42%,rgba(245,232,255,.92) 76%,transparent);
-  animation:dgBurn 6.5s ease-out infinite}
-.dg-fire i:nth-child(1){left:4%;animation-delay:.15s}
-.dg-fire i:nth-child(2){left:21%;animation-delay:.60s}
-.dg-fire i:nth-child(3){left:38%;animation-delay:1.45s}
-.dg-fire i:nth-child(4){left:55%;animation-delay:2.30s}
-.dg-fire i:nth-child(5){left:72%;animation-delay:3.15s}
-.dg-fire i:nth-child(6){left:88%;animation-delay:4.00s}
-@keyframes dgBurn{
-  0%{transform:scaleY(0) scaleX(.7);opacity:0}
-  4%{transform:scaleY(1.08) scaleX(1);opacity:1}
-  9%{transform:scaleY(.82) scaleX(.9);opacity:.92}
-  13%{transform:scaleY(.95) scaleX(.98);opacity:.8}
-  19%{transform:scaleY(0) scaleX(.66);opacity:0}
-  100%{transform:scaleY(0);opacity:0}}
+/* wingbeat: fast downstroke, slower recovery — not a symmetric sine */
+.dg-wn{transform-box:fill-box;transform-origin:88% 96%;animation:dgFlapN .62s cubic-bezier(.7,0,.3,1) infinite alternate}
+.dg-wf{transform-box:fill-box;transform-origin:88% 96%;animation:dgFlapF .62s cubic-bezier(.7,0,.3,1) infinite alternate;animation-delay:.07s}
+@keyframes dgFlapN{from{transform:rotate(-34deg) scaleY(.62) skewX(6deg)}to{transform:rotate(16deg) scaleY(1.08) skewX(-4deg)}}
+@keyframes dgFlapF{from{transform:rotate(-26deg) scaleY(.7)}to{transform:rotate(12deg) scaleY(1)}}
+
+/* the plume: three layered tongues, each breathing on its own clock so they
+   interfere instead of pulsing in step */
+.fl-out{animation:flOut .53s ease-in-out infinite alternate;transform-box:fill-box;transform-origin:2% 50%}
+.fl-mid{animation:flMid .37s ease-in-out infinite alternate;transform-box:fill-box;transform-origin:2% 50%}
+.fl-core{animation:flCore .23s ease-in-out infinite alternate;transform-box:fill-box;transform-origin:2% 50%}
+.fl-lick{transform-box:fill-box;transform-origin:1% 50%}
+.fl-k1{animation:flK1 .31s ease-in-out infinite alternate}
+.fl-k2{animation:flK2 .43s ease-in-out infinite alternate}
+@keyframes flK1{from{transform:scale(.82,.7) rotate(-3deg);opacity:.28}to{transform:scale(1.14,1.2) rotate(2deg);opacity:.62}}
+@keyframes flK2{from{transform:scale(.88,.76) rotate(2.5deg);opacity:.2}to{transform:scale(1.1,1.18) rotate(-3deg);opacity:.55}}
+@keyframes flOut{from{transform:scale(.9,.78) rotate(-2deg);opacity:.62}to{transform:scale(1.1,1.15) rotate(2.5deg);opacity:.9}}
+@keyframes flMid{from{transform:scale(.93,.84) rotate(1.5deg);opacity:.72}to{transform:scale(1.07,1.12) rotate(-2deg);opacity:.97}}
+@keyframes flCore{from{transform:scale(.9,.8);opacity:.82}to{transform:scale(1.08,1.06);opacity:1}}
+
+/* embers peel off the plume and drift back on the slipstream */
+.sp{fill:#fbcfe8;animation:dgSpark 1.5s linear infinite}
+.sp2{fill:#f0abfc;animation-duration:1.9s;animation-delay:.35s}
+.sp3{fill:#e879f9;animation-duration:1.25s;animation-delay:.7s}
+.sp4{fill:#fdf4ff;animation-duration:2.1s;animation-delay:.15s}
+.sp5{fill:#c084fc;animation-duration:1.65s;animation-delay:.95s}
+.sp6{fill:#f5d0fe;animation-duration:1.35s;animation-delay:.55s}
+@keyframes dgSpark{
+  0%{opacity:0;transform:translate(0,0) scale(.4)}
+  12%{opacity:1;transform:translate(4px,-1px) scale(1)}
+  100%{opacity:0;transform:translate(34px,-13px) scale(.25)}}
+
+.dg-smoke ellipse{fill:#4c1d95;opacity:.18;animation:dgSmoke 2.6s ease-out infinite}
+.dg-smoke ellipse:nth-child(2){animation-delay:.85s}
+.dg-smoke ellipse:nth-child(3){animation-delay:1.7s}
+@keyframes dgSmoke{0%{opacity:0;transform:translate(0,0) scale(.5)}
+  25%{opacity:.2}
+  100%{opacity:0;transform:translate(26px,-14px) scale(1.7)}}
+
+/* fire burns the whole flight, then gutters out into embers at the end */
+.dg-plume{animation:flLife 7.2s linear infinite}
+@keyframes flLife{0%,2%{opacity:0}6%,78%{opacity:1}88%{opacity:.42}95%,100%{opacity:0}}
+.dg-sparks{animation:spLife 7.2s linear infinite}
+@keyframes spLife{0%,3%{opacity:0}8%,86%{opacity:1}97%,100%{opacity:0}}
+
+@keyframes dgFly{0%{left:-112px}100%{left:100%}}
+@keyframes dgBob{from{transform:translateY(-2.5px) rotate(-3.5deg)}to{transform:translateY(2.5px) rotate(3.5deg)}}
+
+/* firelight washes the button top as the dragon passes over it */
+.dg-glow{position:absolute;top:-6px;left:0;width:150px;height:20px;margin-left:52px;
+  pointer-events:none;z-index:2;filter:blur(7px);border-radius:50%;
+  background:radial-gradient(ellipse at center,rgba(253,244,255,.5),rgba(232,121,249,.34) 34%,
+    rgba(168,85,247,.2) 58%,rgba(99,102,241,.08) 76%,transparent 86%);
+  animation:dgFly 7.2s linear infinite,glowLife 7.2s linear infinite}
+@keyframes glowLife{0%,4%{opacity:0}9%,78%{opacity:1}90%{opacity:.3}96%,100%{opacity:0}}
 
 @media(prefers-reduced-motion:reduce){
-  .dg-lane,.dg-fire{display:none}
+  .dg-lane,.dg-glow{display:none}
   .fx-venom.vn-done .vn-goo,.fx-venom.vn-done .vn-flood{animation:none}
   .fx-venom.vn-done:hover .vn-sheen{animation:none}
 }
