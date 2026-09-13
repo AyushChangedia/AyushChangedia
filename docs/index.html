@@ -245,13 +245,21 @@ h2.title{font-family:'Space Grotesk';font-size:clamp(30px,5vw,44px);font-weight:
 .chip:hover{transform:translateY(-3px);border-color:var(--indigo);color:#fff;background:rgba(99,102,241,.12);box-shadow:0 8px 22px rgba(99,102,241,.2)}
 
 /* achievements */
-.ach-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
-@media(max-width:680px){.ach-grid{grid-template-columns:1fr}}
-.ach{display:flex;gap:15px;align-items:flex-start;padding:20px;border:1px solid var(--line);border-radius:15px;background:var(--card);transition:.25s}
-.ach:hover{transform:translateY(-3px);border-color:var(--amber);background:rgba(251,191,36,.05)}
-.ach .ic{font-size:22px;flex-shrink:0}
-.ach h4{font-size:15.5px;font-weight:600;margin-bottom:3px}
-.ach p{font-size:13.5px;color:var(--muted)}
+.win-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:16px}
+.win{--acc:var(--indigo);grid-column:span 3;position:relative;overflow:hidden;display:flex;flex-direction:column;gap:9px;padding:22px;border:1px solid var(--line);border-radius:16px;background:var(--card);transition:.3s;text-decoration:none;color:inherit}
+.win::after{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:var(--acc);opacity:0;transition:.3s}
+.win:hover{transform:translateY(-5px);border-color:var(--acc);box-shadow:0 18px 42px rgba(0,0,0,.45)}
+.win:hover::after{opacity:1}
+.win.feat{grid-column:span 6}
+.win .lab{font-family:'JetBrains Mono';font-size:10.5px;letter-spacing:1.7px;text-transform:uppercase;color:var(--acc)}
+.win .big{font-family:'Space Grotesk';font-weight:700;line-height:1;font-size:clamp(26px,3vw,34px);background:var(--grad);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.win.feat .big{font-size:clamp(34px,4.4vw,50px)}
+.win h4{font-family:'Space Grotesk';font-size:15.5px;font-weight:600}
+.win.feat h4{font-size:18px}
+.win p{font-size:13.5px;color:var(--muted);line-height:1.55}
+.win .wt{display:flex;gap:6px;flex-wrap:wrap;margin-top:auto;padding-top:8px}
+@media(max-width:760px){.win{grid-column:span 6}.win.feat{grid-column:span 12}}
+@media(max-width:560px){.win,.win.feat{grid-column:span 12}}
 
 /* contact */
 .contact{text-align:center}
@@ -435,10 +443,45 @@ footer .socials a:hover{color:var(--cyan)}
 <section id="achievements">
   <div class="eyebrow reveal">05 — Milestones</div>
   <h2 class="title reveal">Wins along the way.</h2>
-  <div class="ach-grid" style="margin-top:34px">
-    <div class="ach reveal"><div class="ic">🏆</div><div><h4>Top 1% — Internshala Student Partner</h4><p>Selected as 1 of 7 partners from 720+ applicants; onboarded &amp; mentored 29 students.</p></div></div>
-    <div class="ach reveal"><div class="ic">🎓</div><div><h4>HackerRank Certified</h4><p>SQL (Advanced), SQL (Intermediate), Problem Solving &amp; Critical Thinking.</p></div></div>
-    <div class="ach reveal"><div class="ic">💼</div><div><h4>27 Deals Closed</h4><p>Owned full outreach-to-closure cycle across 12 client accounts in digital marketing.</p></div></div>
+  <div class="win-grid" style="margin-top:34px">
+    <div class="win feat reveal" style="--acc:var(--amber)">
+      <div class="lab">Selectivity</div>
+      <div class="big">Top 1%</div>
+      <h4>Internshala Student Partner</h4>
+      <p>Chosen as 1 of 7 partners from 720+ applicants, then onboarded and mentored 29 students on their upskilling paths.</p>
+      <div class="wt"><span class="tag">1 of 7 chosen</span><span class="tag">720+ applicants</span><span class="tag">29 mentored</span></div>
+    </div>
+    <a class="win feat reveal" style="--acc:var(--cyan)" href="https://catalog-education.oracle.com/pls/certview/sharebadge?id=1B4E4BBBB23ECFA5C0FC0A5415B543EDCE1B9154F40BA0D1D287EDBDB0BB18BE">
+      <div class="lab">Newest certification</div>
+      <div class="big">Oracle</div>
+      <h4>OCI AI Foundations Associate ↗</h4>
+      <p>Generative AI, large language models and Oracle's AI service stack — verified by exam in September 2026.</p>
+      <div class="wt"><span class="tag">Verified credential</span><span class="tag">Sept 2026</span></div>
+    </a>
+    <div class="win reveal" style="--acc:var(--emerald)">
+      <div class="lab">Certified</div>
+      <div class="big">4×</div>
+      <h4>HackerRank</h4>
+      <p>SQL (Advanced), SQL (Intermediate), Problem Solving and Critical Thinking.</p>
+    </div>
+    <div class="win reveal" style="--acc:var(--violet)">
+      <div class="lab">Digital marketing</div>
+      <div class="big">27</div>
+      <h4>Deals Closed</h4>
+      <p>Owned the full outreach-to-closure cycle across 12 client accounts.</p>
+    </div>
+    <div class="win reveal" style="--acc:var(--indigo)">
+      <div class="lab">Recognition</div>
+      <div class="big" style="font-size:clamp(34px,3.9vw,45px)">★</div>
+      <h4>Certificate of Excellence</h4>
+      <p>Awarded by Mindenious for standout performance across the analytics track.</p>
+    </div>
+    <div class="win reveal" style="--acc:var(--coral)">
+      <div class="lab">Security</div>
+      <div class="big">CTF</div>
+      <h4>Capture the Flag</h4>
+      <p>Active in Capture-the-Flag competitions and CTF-style hackathons.</p>
+    </div>
   </div>
 </section>
 
