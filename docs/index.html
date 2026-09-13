@@ -66,6 +66,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet"/>
 <link rel="stylesheet" href="./assets/portfolio-intro.css"/>
+<link rel="stylesheet" href="./assets/hero-fx.css"/>
 <script>
 /* ─── PortfolioIntro · configuration ──────────────────────────────────────
    INTRO_ALWAYS_PLAY   true  → replay the opening on every load (development)
@@ -123,6 +124,7 @@ var INTRO_SPEED       = 1;
 </script>
 <script defer src="./assets/gsap.min.js"></script>       <!-- GSAP 3.12.5, vendored: no CDN to be blocked -->
 <script defer src="./assets/portfolio-intro.js"></script>
+<script defer src="./assets/hero-fx.js"></script>
 <style>
 :root{
   --bg:#07070c; --bg2:#0c0c15; --card:rgba(255,255,255,.03); --line:rgba(255,255,255,.09);
@@ -183,7 +185,7 @@ h2.title{font-family:'Space Grotesk';font-size:clamp(30px,5vw,44px);font-weight:
 .type-wrap{font-family:'JetBrains Mono';font-size:clamp(16px,3vw,24px);color:var(--muted);height:34px;margin-bottom:24px}
 #typed{color:var(--txt)}.cursor{display:inline-block;width:9px;height:22px;background:var(--cyan);margin-left:3px;vertical-align:middle;animation:blink 1s steps(2) infinite}
 @keyframes blink{0%,50%{opacity:1}51%,100%{opacity:0}}
-.hero p.lede{font-size:clamp(16px,2.4vw,19px);color:var(--muted);max-width:600px;margin-bottom:36px}
+.hero p.lede{font-size:clamp(16px,2.4vw,19px);color:var(--muted);max-width:600px;margin-bottom:54px}
 .hero p.lede b{color:var(--txt);font-weight:600}
 .cta-row{display:flex;gap:14px;flex-wrap:wrap}
 .btn{display:inline-flex;align-items:center;gap:9px;padding:13px 24px;border-radius:12px;font-weight:600;font-size:14.5px;text-decoration:none;transition:.25s;border:1px solid transparent}
@@ -307,9 +309,35 @@ footer .socials a:hover{color:var(--cyan)}
   <div class="type-wrap reveal"><span id="typed"></span><span class="cursor"></span></div>
   <p class="lede reveal">I build <b>AI systems</b>, <b>backend applications</b>, and <b>automation</b> that save humans from repetitive work — from LLM-powered tools to scalable APIs and trading bots that backtest while I sleep.</p>
   <div class="cta-row reveal">
-    <a href="#projects" class="btn btn-primary">View My Work →</a>
-    <a href="./Ayush_Changedia_Resume.pdf" class="btn btn-ghost">⬇ Download Résumé</a>
-    <a href="https://github.com/AyushChangedia" class="btn btn-ghost">GitHub</a>
+    <a href="#projects" class="btn btn-primary fx-dragon">
+      <span class="dg-lane" aria-hidden="true">
+        <span class="dg">
+          <svg class="dg-body" viewBox="0 0 32 20" aria-hidden="true"><path d="M2 13.4c3.1-.9 5.2-2 7.2-3.9 1.6-1.5 3.1-3.4 6-3.4 2 0 3.1.8 4.1 1.6.8.6 1.6 1 2.6 1 .9 0 1.7-.3 2.5-.9l-1.1 2.3 2.7.6-2.5 1.2c.3.9 0 1.9-.8 2.5-1 .7-2.3.6-3.3 0-1.2-.7-2-1.8-3.5-2-1.6-.2-3.1.6-4.5 1.3-2.3 1.1-5 1.6-7.4 1-1-.2-1.9-.5-2.6-1.1z"/><path d="M12.6 6c1-2.7 3.1-4.5 5.8-5-1.3 1.9-1.7 3.7-1.2 5.5-1.6-.7-3.1-.8-4.6-.5z" opacity=".8"/></svg>
+          <span class="dg-flame"></span>
+        </span>
+      </span>
+      <span class="dg-lit" aria-hidden="true"></span>
+      View My Work →
+    </a>
+    <a href="./Ayush_Changedia_Resume.pdf" class="btn btn-ghost fx-resume">
+      <span class="rz-fan" aria-hidden="true">
+        <span class="rz-l"></span>
+        <span class="rz-r"></span>
+        <span class="rz-doc">
+          <b></b>
+          <i style="width:82%"></i><i style="width:64%"></i>
+          <s></s>
+          <i style="width:92%"></i><i style="width:76%"></i><i style="width:88%"></i>
+          <s></s>
+          <i style="width:70%"></i><i style="width:54%"></i>
+        </span>
+      </span>
+      ⬇ Download Résumé
+    </a>
+    <a href="https://github.com/AyushChangedia" class="btn btn-ghost fx-venom">
+      <span class="vn" aria-hidden="true"><i class="vn-main"></i><i class="vn-a"></i><i class="vn-b"></i></span>
+      GitHub
+    </a>
     <a href="mailto:ayushc7711@gmail.com" class="btn btn-ghost">Email</a>
   </div>
   <div class="stats reveal" style="margin-top:56px">
