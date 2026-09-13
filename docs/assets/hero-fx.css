@@ -19,69 +19,81 @@
 .fx-resume:hover .rz-r,.fx-resume:focus-visible .rz-r{transform:translate(17px,-2px) scale(1) rotate(13deg)}
 .fx-resume:hover .rz-doc,.fx-resume:focus-visible .rz-doc{transform:translateY(-6px) scale(1) rotate(-3deg)}
 
-/* ---------- 2. GitHub: liquid symbiote crawls up from the bottom ---------- */
+/* ---------- 2. GitHub: metaball symbiote ----------
+   The transformed state is NOT the button's own box. The <a> paints nothing;
+   every black pixel comes from .venom-goo, an inset:-40px layer of blobs fused
+   by an SVG metaball threshold, so the silhouette bleeds outside the rect. */
 .fx-defs{position:absolute;width:0;height:0;overflow:hidden}
-.fx-venom{position:relative;overflow:hidden;isolation:isolate;
-  transition:color .6s ease,border-color .6s ease,box-shadow .4s ease}
-.vn{position:absolute;inset:0;z-index:-1;pointer-events:none}
 
-/* the goo group: blobs blurred + contrast-crushed so they merge like liquid */
-.vn-goo{position:absolute;inset:-40% -12%;filter:url(#vnGoo)}
-.vn-goo i{position:absolute;background:#05050b}
-/* main mass */
-.vn-flood{left:-16%;right:-16%;bottom:-46%;height:122%;
-  border-radius:46% 54% 8% 8%/26% 30% 6% 6%;transform:translateY(102%)}
-/* tendrils that climb ahead of the mass */
-.vn-t{bottom:26%;width:15px;height:38px;border-radius:50% 50% 42% 42%;transform:translateY(150%) scaleY(.55)}
-.vn-t1{left:6%}   .vn-t2{left:24%}  .vn-t3{left:41%}
-.vn-t4{left:58%}  .vn-t5{left:75%}  .vn-t6{left:88%}
-/* droplets that detach and rejoin */
-.vn-d{bottom:30%;width:9px;height:9px;border-radius:50%;transform:translateY(220%)}
-.vn-d1{left:18%} .vn-d2{left:52%} .vn-d3{left:80%}
+.venom-host{position:relative;overflow:visible;display:inline-flex;isolation:isolate}
+.fx-venom{position:relative;overflow:visible;
+  transition:background .5s ease,border-color .5s ease,color .5s ease}
 
-.fx-venom.vn-go .vn-flood{animation:vnFlood 2.1s cubic-bezier(.34,.06,.2,1) forwards}
-.fx-venom.vn-go .vn-t{animation:vnRise 1.5s cubic-bezier(.3,.1,.25,1) forwards}
-.fx-venom.vn-go .vn-t1{animation-delay:.06s} .fx-venom.vn-go .vn-t2{animation-delay:.20s}
-.fx-venom.vn-go .vn-t3{animation-delay:.12s} .fx-venom.vn-go .vn-t4{animation-delay:.30s}
-.fx-venom.vn-go .vn-t5{animation-delay:.17s} .fx-venom.vn-go .vn-t6{animation-delay:.26s}
-.fx-venom.vn-go .vn-d{animation:vnDrop 1.25s cubic-bezier(.3,.1,.25,1) forwards}
-.fx-venom.vn-go .vn-d1{animation-delay:.30s} .fx-venom.vn-go .vn-d2{animation-delay:.16s}
-.fx-venom.vn-go .vn-d3{animation-delay:.40s}
-
-@keyframes vnFlood{0%{transform:translateY(102%)}
-  55%{transform:translateY(24%)}
-  100%{transform:translateY(-17%)}}
-@keyframes vnRise{0%{transform:translateY(150%) scaleY(.55)}
-  60%{transform:translateY(-18%) scaleY(1.25)}
-  100%{transform:translateY(-46%) scaleY(1)}}
-@keyframes vnDrop{0%{transform:translateY(220%) scale(.5)}
-  100%{transform:translateY(-30%) scale(1)}}
-
-/* settled: solid glossy slab. Filter dropped — the mass already covers, and
-   an idle animation behind an SVG filter re-rasterises every frame. */
-.fx-venom.vn-done{color:#fff;border-color:rgba(255,255,255,.17);box-shadow:0 10px 26px rgba(0,0,0,.5)}
-.fx-venom.vn-done .vn-goo{filter:none;animation:vnIdle 8s ease-in-out infinite}
-.fx-venom.vn-done .vn-flood{animation:vnBreathe 8s ease-in-out infinite}
-@keyframes vnIdle{0%,100%{transform:translate(0,0)}50%{transform:translate(.6px,-1px)}}
-@keyframes vnBreathe{0%,100%{border-radius:46% 54% 8% 8%/26% 30% 6% 6%;transform:translateY(-17%) scaleX(1)}
-  50%{border-radius:54% 46% 9% 7%/31% 25% 7% 5%;transform:translateY(-18.5%) scaleX(1.012)}}
-
-/* wet look: baked highlights, a hover sheen, and a ripple that tracks the cursor */
-.vn-gloss{position:absolute;inset:0;opacity:0;transition:opacity .5s ease;
+/* the only filtered layer — text must never live in here */
+.venom-goo{position:absolute;inset:-26px;pointer-events:none;z-index:0;opacity:0;
+  filter:url(#venom-goo);will-change:filter;transition:opacity .25s ease}
+.vb{position:absolute;border-radius:50%;scale:0;
+  transition:scale .55s cubic-bezier(.34,1.5,.5,1);
+  /* opaque base, so the feColorMatrix alpha threshold preserves the RGB above it */
   background:
-    radial-gradient(120% 78% at 26% 4%,rgba(255,255,255,.24),transparent 46%),
-    radial-gradient(90% 60% at 80% 96%,rgba(255,255,255,.10),transparent 52%),
-    linear-gradient(180deg,rgba(255,255,255,.11),transparent 36%)}
-.fx-venom.vn-done .vn-gloss{opacity:.85}
-.fx-venom.vn-done:hover .vn-gloss{opacity:1}
-.vn-sheen{position:absolute;inset:0;opacity:0;
-  background:linear-gradient(104deg,transparent 36%,rgba(255,255,255,.20) 50%,transparent 64%)}
-.fx-venom.vn-done:hover .vn-sheen{animation:vnSheen .95s ease forwards}
-@keyframes vnSheen{0%{opacity:0;transform:translateX(-62%)}18%{opacity:1}100%{opacity:0;transform:translateX(62%)}}
-.vn-rip{position:absolute;width:58px;height:58px;left:var(--mx,50%);top:var(--my,50%);
-  translate:-50% -50%;border-radius:50%;opacity:0;transition:opacity .3s ease;
-  background:radial-gradient(circle,rgba(255,255,255,.20),rgba(255,255,255,.05) 42%,transparent 66%)}
-.fx-venom.vn-done:hover .vn-rip{opacity:1}
+    radial-gradient(38% 20% at 31% 11%,rgba(255,255,255,.13),transparent 58%),
+    radial-gradient(110% 80% at 50% 108%,rgba(139,92,246,.07),transparent 50%),
+    radial-gradient(circle at 40% 32%,#08080d,#000 58%)}
+/* the mass: sits exactly over the button rect inside the -40px layer */
+.vb-core{inset:26px;width:auto;height:auto;margin:0;border-radius:16px;transition-delay:0ms;
+  animation:f-core 6.7s ease-in-out infinite alternate}
+@keyframes f-core{from{transform:scale(1) translate(0,0)}to{transform:scale(1.035) translate(2px,-1px)}}
+
+.vb1{width:24px;height:24px;left:16%;top:44%;margin:-12.0px 0 0 -12.0px;animation:f-vb1 4.7s 0.0s ease-in-out infinite alternate;transition-delay:245ms}
+@keyframes f-vb1{from{transform:translate(0,0) scale(.72)}to{transform:translate(14px,-9px) scale(1.22)}}
+.vb2{width:18px;height:18px;left:32%;top:24%;margin:-9.0px 0 0 -9.0px;animation:f-vb2 3.1s 0.4s ease-in-out infinite alternate;transition-delay:105ms}
+@keyframes f-vb2{from{transform:translate(0,0) scale(.72)}to{transform:translate(-8px,-12px) scale(1.18)}}
+.vb3{width:14px;height:14px;left:52%;top:19%;margin:-7.0px 0 0 -7.0px;animation:f-vb3 2.3s 0.9s ease-in-out infinite alternate;transition-delay:35ms}
+@keyframes f-vb3{from{transform:translate(0,0) scale(.72)}to{transform:translate(10px,7px) scale(1.25)}}
+.vb4{width:21px;height:21px;left:70%;top:26%;margin:-10.5px 0 0 -10.5px;animation:f-vb4 6.1s 1.3s ease-in-out infinite alternate;transition-delay:140ms}
+@keyframes f-vb4{from{transform:translate(0,0) scale(.72)}to{transform:translate(-11px,-8px) scale(1.15)}}
+.vb5{width:25px;height:25px;left:84%;top:52%;margin:-12.5px 0 0 -12.5px;animation:f-vb5 5.3s 0.2s ease-in-out infinite alternate;transition-delay:280ms}
+@keyframes f-vb5{from{transform:translate(0,0) scale(.72)}to{transform:translate(16px,6px) scale(1.2)}}
+.vb6{width:20px;height:20px;left:74%;top:76%;margin:-10.0px 0 0 -10.0px;animation:f-vb6 7.3s 1.7s ease-in-out infinite alternate;transition-delay:210ms}
+@keyframes f-vb6{from{transform:translate(0,0) scale(.72)}to{transform:translate(-9px,12px) scale(1.17)}}
+.vb7{width:17px;height:17px;left:48%;top:81%;margin:-8.5px 0 0 -8.5px;animation:f-vb7 8.9s 0.6s ease-in-out infinite alternate;transition-delay:70ms}
+@keyframes f-vb7{from{transform:translate(0,0) scale(.72)}to{transform:translate(7px,14px) scale(1.24)}}
+.vb8{width:22px;height:22px;left:28%;top:74%;margin:-11.0px 0 0 -11.0px;animation:f-vb8 10.1s 2.1s ease-in-out infinite alternate;transition-delay:175ms}
+@keyframes f-vb8{from{transform:translate(0,0) scale(.72)}to{transform:translate(-13px,10px) scale(1.13)}}
+.vb9{width:15px;height:15px;left:13%;top:62%;margin:-7.5px 0 0 -7.5px;animation:f-vb9 11.3s 1.1s ease-in-out infinite alternate;transition-delay:315ms}
+@keyframes f-vb9{from{transform:translate(0,0) scale(.72)}to{transform:translate(12px,-7px) scale(1.21)}}
+
+/* drips: crawl below the bottom edge and thin out, so the threshold reads them
+   as a tendril stretching and snapping back */
+.vd1{width:15px;height:15px;left:38%;top:72%;margin:-7.5px 0 0 -7.5px;transition-delay:350ms;
+  animation:f-vd1 9.7s .5s ease-in-out infinite}
+.vd2{width:14px;height:14px;left:63%;top:74%;margin:-7.0px 0 0 -7.0px;transition-delay:385ms;
+  animation:f-vd2 13.1s 2.3s ease-in-out infinite}
+@keyframes f-vd1{0%,100%{transform:translateY(0) scale(1)}
+  38%{transform:translateY(18px) scale(.62)}58%{transform:translateY(29px) scale(.34)}
+  74%{transform:translateY(15px) scale(.7)}}
+@keyframes f-vd2{0%,100%{transform:translateY(0) scale(1)}
+  42%{transform:translateY(15px) scale(.6)}62%{transform:translateY(24px) scale(.3)}
+  80%{transform:translateY(11px) scale(.75)}}
+
+/* label rides above the filter, untouched by it */
+.venom-label{position:relative;z-index:2;color:inherit}
+
+/* transformed: the button itself stops painting. border-color, not border, so
+   the 1px box is preserved and the row does not reflow. */
+.fx-venom.vn-done{background:transparent;border-color:transparent;box-shadow:none;
+  border-radius:0;color:#fff}
+.fx-venom.vn-done .venom-label{text-shadow:0 1px 3px rgba(0,0,0,.9),0 0 14px rgba(168,85,247,.35)}
+.fx-venom.vn-done .venom-goo{opacity:1}
+.fx-venom.vn-done .vb{scale:1}
+.venom-host:hover .fx-venom.vn-done .venom-goo{filter:url(#venom-goo) brightness(1.12)}
+
+@media(prefers-reduced-motion:reduce){
+  /* keep the irregular silhouette, stop it moving */
+  .venom-goo{filter:url(#venom-goo-still)}
+  .vb,.vb-core,.vd1,.vd2{animation:none}
+  .vb{transition:none}
+}
 
 /* ---------- 3. View My Work: dragon strafes, breathing live fire ---------- */
 .fx-dragon{position:relative;overflow:visible}

@@ -304,9 +304,30 @@ footer .socials a:hover{color:var(--cyan)}
 
 <!-- HERO -->
 <header class="hero" id="top">
-  <svg class="fx-defs" aria-hidden="true" focusable="false"><defs>
-    <filter id="vnGoo"><feGaussianBlur in="SourceGraphic" stdDeviation="4.5" result="b"/>
-      <feColorMatrix in="b" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 24 -10"/>
+  <svg class="fx-defs" width="0" height="0" aria-hidden="true" focusable="false"><defs>
+    <!-- TUNING: stdDeviation = blob fusion radius | alpha multiplier (4th row, 22)
+         = metaball threshold hardness | displacement scale = edge crawl depth -->
+    <filter id="venom-goo" x="-25%" y="-25%" width="150%" height="150%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur"/>
+      <feColorMatrix in="blur" type="matrix"
+        values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 22 -10" result="goo"/>
+      <feTurbulence type="fractalNoise" baseFrequency="0.014 0.022" numOctaves="3"
+                    seed="3" result="noise">
+        <animate attributeName="seed" values="1;4;7;11;2;9;1" dur="7s"
+                 repeatCount="indefinite" calcMode="discrete"/>
+      </feTurbulence>
+      <feDisplacementMap in="goo" in2="noise" scale="14"
+                         xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <!-- same shape, no seed animation, for prefers-reduced-motion -->
+    <filter id="venom-goo-still" x="-25%" y="-25%" width="150%" height="150%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur"/>
+      <feColorMatrix in="blur" type="matrix"
+        values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 22 -10" result="goo"/>
+      <feTurbulence type="fractalNoise" baseFrequency="0.014 0.022" numOctaves="3"
+                    seed="3" result="noise"/>
+      <feDisplacementMap in="goo" in2="noise" scale="14"
+                         xChannelSelector="R" yChannelSelector="G"/>
     </filter>
   </defs></svg>
   <div class="hero-badge reveal"><span class="dot"></span> Open to Internships &amp; Collaborations</div>
@@ -409,20 +430,16 @@ footer .socials a:hover{color:var(--cyan)}
       </span>
       ⬇ Download Résumé
     </a>
-    <a href="https://github.com/AyushChangedia" class="btn btn-ghost fx-venom">
-      <span class="vn" aria-hidden="true">
-        <span class="vn-goo">
-          <i class="vn-flood"></i>
-          <i class="vn-t vn-t1"></i><i class="vn-t vn-t2"></i><i class="vn-t vn-t3"></i>
-          <i class="vn-t vn-t4"></i><i class="vn-t vn-t5"></i><i class="vn-t vn-t6"></i>
-          <i class="vn-d vn-d1"></i><i class="vn-d vn-d2"></i><i class="vn-d vn-d3"></i>
+    <span class="venom-host">
+      <a href="https://github.com/AyushChangedia" class="btn btn-ghost fx-venom">
+        <span class="venom-goo" aria-hidden="true">
+          <i class="vb vb-core"></i>
+          <i class="vb vb1"></i><i class="vb vb2"></i><i class="vb vb3"></i><i class="vb vb4"></i><i class="vb vb5"></i><i class="vb vb6"></i><i class="vb vb7"></i><i class="vb vb8"></i><i class="vb vb9"></i>
+          <i class="vb vd1"></i><i class="vb vd2"></i>
         </span>
-        <span class="vn-gloss"></span>
-        <span class="vn-sheen"></span>
-        <span class="vn-rip"></span>
-      </span>
-      GitHub
-    </a>
+        <span class="venom-label">GitHub</span>
+      </a>
+    </span>
     <a href="mailto:ayushc7711@gmail.com" class="btn btn-ghost">Email</a>
   </div>
   <div class="stats reveal" style="margin-top:56px">
