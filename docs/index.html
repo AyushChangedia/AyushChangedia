@@ -164,8 +164,6 @@ nav.scrolled{border-bottom:1px solid var(--line);background:rgba(7,7,12,.8)}
 .nav-links a:hover{color:var(--txt)}
 .nav-links a::after{content:'';position:absolute;left:0;bottom:-5px;width:0;height:2px;background:var(--grad);transition:.25s;border-radius:2px}
 .nav-links a:hover::after{width:100%}
-.nav-cta{padding:8px 18px;border:1px solid var(--line);border-radius:999px;background:rgba(255,255,255,.04)}
-.nav-cta:hover{border-color:var(--indigo);box-shadow:0 0 20px rgba(99,102,241,.3)}
 .menu-btn{display:none;background:none;border:none;color:var(--txt);font-size:24px;cursor:pointer}
 @media(max-width:760px){.nav-links{display:none}.menu-btn{display:block}}
 
@@ -242,6 +240,7 @@ h2.title{font-family:'Space Grotesk';font-size:clamp(30px,5vw,44px);font-weight:
 
 /* skills */
 .skill-cat{margin-bottom:24px}
+.skill-cat:last-child{margin-bottom:0}
 .skill-cat h4{font-family:'JetBrains Mono';font-size:13px;color:var(--dim);text-transform:uppercase;letter-spacing:1.5px;margin-bottom:12px}
 .chips{display:flex;gap:10px;flex-wrap:wrap}
 .chip{padding:9px 16px;border:1px solid var(--line);border-radius:11px;background:var(--card);font-size:14px;font-weight:500;transition:.2s;cursor:default}
@@ -298,7 +297,6 @@ footer .socials a:hover{color:var(--cyan)}
     <a href="#projects">Projects</a>
     <a href="#skills">Skills</a>
     <a href="#contact">Contact</a>
-    <a href="./Ayush_Changedia_Resume.pdf" class="nav-cta">Résumé ↗</a>
   </div>
   <button class="menu-btn" onclick="document.querySelector('.nav-links').style.display= (getComputedStyle(document.querySelector('.nav-links')).display==='none'?'flex':'none')">☰</button>
 </nav>
@@ -575,7 +573,6 @@ footer .socials a:hover{color:var(--cyan)}
   <div class="cta-row reveal">
     <a href="mailto:ayushc7711@gmail.com" class="btn btn-primary">✉ Say Hello</a>
     <a href="https://github.com/AyushChangedia" class="btn btn-ghost">GitHub</a>
-    <a href="./Ayush_Changedia_Resume.pdf" class="btn btn-ghost">Résumé</a>
   </div>
 </section>
 
@@ -583,7 +580,6 @@ footer .socials a:hover{color:var(--cyan)}
   <div class="socials">
     <a href="https://github.com/AyushChangedia">GitHub</a>
     <a href="mailto:ayushc7711@gmail.com">Email</a>
-    <a href="./Ayush_Changedia_Resume.pdf">Résumé</a>
   </div>
   <div>© 2026 Ayush Changedia</div>
 </footer>
