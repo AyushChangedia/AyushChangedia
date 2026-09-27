@@ -87,7 +87,7 @@
 ## <img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="28"> &nbsp;About Me
 
 ```yaml
-name: "Ayush Sameer Changedia"
+name: "Ayush Changedia"
 role: "AI Engineer × Backend Developer"
 studying: "B.Sc. Computer Science @ MIT World Peace University · CGPA 8.2/10"
 based_in: "Pune, India 🇮🇳"
