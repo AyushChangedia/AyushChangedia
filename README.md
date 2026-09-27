@@ -52,11 +52,9 @@
 
 <div align="center">
 
-<a href="mailto:ayushc7711@gmail.com"><img src="./assets/email-button.svg" width="137" height="30" alt="Email"/></a>
+<a href="https://www.linkedin.com/in/ayushchangedia/"><img src="./assets/linkedin-button.svg" width="168" height="30" alt="LinkedIn"/></a>
 &nbsp;
 <a href="https://ayushchangedia.github.io/AyushChangedia/"><img src="./assets/portfolio-button.svg" width="176" height="30" alt="Portfolio"/></a>
-&nbsp;
-<a href="./Ayush_Changedia_Resume.pdf"><img src="./assets/resume-button.svg" width="152" height="30" alt="Résumé"/></a>
 
 </div>
 
