@@ -126,7 +126,6 @@ var INTRO_SPEED       = 1;
 <script defer src="./assets/portfolio-intro.js"></script>
 <script defer src="./assets/hero-fx.js"></script>
 <script defer src="./assets/dragon-fire.js"></script>
-<script defer src="./assets/project-fx.js"></script>
 <style>
 :root{
   --bg:#07070c; --bg2:#0c0c15; --card:rgba(255,255,255,.03); --line:rgba(255,255,255,.09);
@@ -230,8 +229,6 @@ h2.title{font-family:'Space Grotesk';font-size:clamp(30px,5vw,44px);font-weight:
 @media(max-width:760px){.proj-grid{grid-template-columns:1fr}}
 .proj{border:1px solid var(--line);border-radius:18px;background:var(--card);padding:28px;transition:.3s;position:relative;overflow:hidden}
 .proj::before{content:'';position:absolute;inset:0;background:var(--grad);opacity:0;transition:.3s;z-index:-1}
-.proj canvas.pfx{position:absolute;inset:0;width:100%;height:100%;z-index:0;pointer-events:none;opacity:.9}
-.proj>:not(canvas){position:relative;z-index:1}
 .proj:hover{transform:translateY(-6px);border-color:transparent;box-shadow:0 20px 50px rgba(0,0,0,.5)}
 .proj:hover::after{opacity:.5}
 .proj::after{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:var(--grad);opacity:0;transition:.3s}
@@ -460,7 +457,6 @@ footer .socials a:hover{color:var(--cyan)}
   <h2 class="title reveal">Things I've shipped.</h2>
   <div class="proj-grid" style="margin-top:36px">
     <a class="proj reveal" href="https://github.com/AyushChangedia/resume-roaster" style="text-decoration:none;color:inherit;display:block">
-      <canvas class="pfx" data-fx="roaster" aria-hidden="true"></canvas>
       <div class="pi">🔥</div>
       <h3>Résumé Roaster ↗</h3>
       <div class="desc">Feed it a résumé and get back an honest, LLM-powered roast — strengths, weak spots, and the buzzwords worth cutting.</div>
@@ -468,7 +464,6 @@ footer .socials a:hover{color:var(--cyan)}
       <div class="tags"><span class="tag">Python</span><span class="tag">OpenAI</span><span class="tag">LLMs</span></div>
     </a>
     <a class="proj reveal" href="https://github.com/AyushChangedia/market-strategy" style="text-decoration:none;color:inherit;display:block">
-      <canvas class="pfx" data-fx="orb" aria-hidden="true"></canvas>
       <div class="pi">📈</div>
       <h3>ORB Strategy Backtester ↗</h3>
       <div class="desc">Automated opening-range-breakout backtesting on Bank Nifty futures via a custom TradingView MCP integration, with a parameter-optimization loop that isolated commission drag as the #1 P&amp;L leak.</div>
@@ -476,7 +471,6 @@ footer .socials a:hover{color:var(--cyan)}
       <div class="tags"><span class="tag">Python</span><span class="tag">Pine Script v5</span><span class="tag">TradingView MCP</span></div>
     </a>
     <a class="proj reveal" href="https://github.com/AyushChangedia/ecommerce-api" style="text-decoration:none;color:inherit;display:block">
-      <canvas class="pfx" data-fx="api" aria-hidden="true"></canvas>
       <div class="pi">🔌</div>
       <h3>Scalable Commerce APIs ↗</h3>
       <div class="desc">Production-style REST APIs covering product, order and payment flows — hardened with JWT auth, input validation and tuned SQL for fast, safe responses.</div>
@@ -484,7 +478,6 @@ footer .socials a:hover{color:var(--cyan)}
       <div class="tags"><span class="tag">Node.js</span><span class="tag">Express</span><span class="tag">PostgreSQL</span></div>
     </a>
     <a class="proj reveal" href="https://github.com/AyushChangedia/Git-City" style="text-decoration:none;color:inherit;display:block">
-      <canvas class="pfx" data-fx="city" aria-hidden="true"></canvas>
       <div class="pi">🏙️</div>
       <h3>Git City ↗</h3>
       <div class="desc">Paste a GitHub repo URL and watch its history build itself, commit by commit, as a 3D city — every file a building, every folder a district, height driven by line count.</div>
@@ -492,7 +485,6 @@ footer .socials a:hover{color:var(--cyan)}
       <div class="tags"><span class="tag">JavaScript</span><span class="tag">three.js</span><span class="tag">WebGL</span></div>
     </a>
     <a class="proj reveal" href="https://github.com/AyushChangedia/AI-Arena" style="text-decoration:none;color:inherit;display:block">
-      <canvas class="pfx" data-fx="arena" aria-hidden="true"></canvas>
       <div class="pi">⚔️</div>
       <h3>AI Agent Arena ↗</h3>
       <div class="desc">Two LLM agents get the same task in identical sandboxes, execute for real with tool calling and file I/O, then get scored on what actually happened — not on how the answer reads.</div>
@@ -500,7 +492,6 @@ footer .socials a:hover{color:var(--cyan)}
       <div class="tags"><span class="tag">TypeScript</span><span class="tag">Next.js</span><span class="tag">LLM Agents</span></div>
     </a>
     <a class="proj reveal" href="https://github.com/AyushChangedia/Expense-Tracker" style="text-decoration:none;color:inherit;display:block">
-      <canvas class="pfx" data-fx="flux" aria-hidden="true"></canvas>
       <div class="pi">💸</div>
       <h3>FluxFin — Expense Tracker ↗</h3>
       <div class="desc">Budgets, goals, recurring transactions and analytics over your own Postgres — plus a natural-language quick-add that turns a typed sentence into a categorised entry.</div>
