@@ -67,6 +67,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet"/>
 <link rel="stylesheet" href="./assets/portfolio-intro.css"/>
 <link rel="stylesheet" href="./assets/hero-fx.css"/>
+<link rel="stylesheet" href="./assets/roast-fire.css"/>
 <script>
 /* ─── PortfolioIntro · configuration ──────────────────────────────────────
    INTRO_ALWAYS_PLAY   true  → replay the opening on every load (development)
@@ -125,7 +126,7 @@ var INTRO_SPEED       = 1;
 <script defer src="./assets/gsap.min.js"></script>       <!-- GSAP 3.12.5, vendored: no CDN to be blocked -->
 <script defer src="./assets/portfolio-intro.js"></script>
 <script defer src="./assets/hero-fx.js"></script>
-<script defer src="./assets/dragon-fire.js"></script>
+<script defer src="./assets/roast-fire.js"></script>
 <style>
 :root{
   --bg:#07070c; --bg2:#0c0c15; --card:rgba(255,255,255,.03); --line:rgba(255,255,255,.09);
@@ -334,52 +335,7 @@ footer .socials a:hover{color:var(--cyan)}
   <div class="type-wrap reveal"><span id="typed"></span><span class="cursor"></span></div>
   <p class="lede reveal">I build <b>AI systems</b>, <b>backend applications</b>, and <b>automation</b> that save humans from repetitive work — from LLM-powered tools to scalable APIs and trading bots that backtest while I sleep.</p>
   <div class="cta-row reveal">
-    <span class="dragon-host">
-      <canvas class="dfire" aria-hidden="true"></canvas>
-      <a href="#projects" class="btn btn-primary fx-dragon">
-        <span class="dg-lane" aria-hidden="true">
-          <span class="dg"><span class="dragon-mouth" aria-hidden="true"></span><svg class="dg-svg" viewBox="0 0 148 54" aria-hidden="true">
-            <defs>
-              <linearGradient id="dgBody" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="0" stop-color="#c4b5fd"/><stop offset=".45" stop-color="#8b5cf6"/><stop offset="1" stop-color="#4c1d95"/>
-              </linearGradient>
-              <linearGradient id="dgWingG" x1=".1" y1="0" x2=".55" y2="1">
-                <stop offset="0" stop-color="#e9d5ff"/><stop offset=".45" stop-color="#a78bfa"/><stop offset="1" stop-color="#5b21b6"/>
-              </linearGradient>
-              <linearGradient id="dgWingF" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="0" stop-color="#6d28d9"/><stop offset="1" stop-color="#2e1065"/>
-              </linearGradient>
-              <radialGradient id="dgCoreG" cx=".07" cy=".5" r=".95">
-                <stop offset="0" stop-color="#fff"/><stop offset=".14" stop-color="#fdf4ff"/>
-                <stop offset=".34" stop-color="#f0abfc"/><stop offset=".58" stop-color="#c084fc"/>
-                <stop offset=".8" stop-color="#7c3aed" stop-opacity=".7"/><stop offset="1" stop-color="#4338ca" stop-opacity="0"/>
-              </radialGradient>
-              <radialGradient id="dgHotG" cx=".04" cy=".5" r=".9">
-                <stop offset="0" stop-color="#fff"/><stop offset=".18" stop-color="#fdf4ff"/>
-                <stop offset=".42" stop-color="#f5d0fe"/><stop offset=".68" stop-color="#e879f9" stop-opacity=".8"/>
-                <stop offset="1" stop-color="#c084fc" stop-opacity="0"/>
-              </radialGradient>
-              <radialGradient id="dgOuterG" cx=".05" cy=".5" r="1">
-                <stop offset="0" stop-color="#f5d0fe" stop-opacity=".9"/><stop offset=".32" stop-color="#e879f9" stop-opacity=".62"/>
-                <stop offset=".62" stop-color="#a855f7" stop-opacity=".38"/><stop offset=".84" stop-color="#6366f1" stop-opacity=".16"/>
-                <stop offset="1" stop-color="#22d3ee" stop-opacity="0"/>
-              </radialGradient>
-            </defs>
-
-            <g class="dg-anim">
-              <path class="dg-wf" fill="url(#dgWingF)" d="M33 19C28.5 8 20 1.5 10 2.8c5.6 4.6 9.4 9.6 11.8 15.4l3.2-1.4 2.4 3 3-2.2 2.2 2.6Z"/>
-              <path fill="url(#dgBody)" d="M4 33.5c7-1 13.6-3 19.6-6.2l2.6 4.8C19.6 35.4 12.4 37 4.6 37.2L0 39Z"/>
-              <path fill="url(#dgBody)" d="M20 27.5c4.6-5.8 11.4-9.4 19.4-10.5 6.6-.9 12.2.2 16.6 2.8-4.4 5.2-11 8.4-18.8 9.7-6.8 1.1-12.6.5-17.2-2Z"/>
-              <path fill="#7c3aed" d="M29.6 28.6 27 34.8l3.9-1.8 1.3-3.8Zm8.8-1 .4 6.2 3.5-2.4-1.1-3.6Z"/>
-              <g class="dg-head"><path fill="url(#dgBody)" d="M46.5 18.6c4.2-5 9-8.6 14.6-8.9l4 2.4-5.4 2.4c-3.2 1.3-7.1 3.5-10.3 6.1Z"/><path fill="#a78bfa" d="M56 10.2 59.2 4.4 60.6 9.7Zm-3.6 1.4 1.2-5.4 2.1 4.3Z"/><circle fill="#fbcfe8" cx="57.6" cy="12.3" r="1.15"/></g>
-              <path fill="#ddd6fe" d="M25 21.6l2.2-2.8 1.6 3Zm6.4-2.2 2-2.6 1.5 2.8Zm6.6-1.6 1.9-2.5 1.4 2.7Z"/>
-              <path class="dg-wn" fill="url(#dgWingG)" d="M35 19.6C30.6 6.8 21.6-.4 11 .8c6.6 5.6 11.4 12 14.8 20.4l3.4-2.2 2.4 3.4 3.4-2.8Z"/>
-            </g>
-          </svg></span>
-        </span>
-        View My Work →
-      </a>
-    </span>
+    <a href="#projects" class="btn btn-primary">View My Work →</a>
     <span class="venom-host">
       <a href="https://github.com/AyushChangedia" class="btn btn-ghost fx-venom">
         <span class="venom-goo" aria-hidden="true">
@@ -456,7 +412,8 @@ footer .socials a:hover{color:var(--cyan)}
   <div class="eyebrow reveal">03 — Projects</div>
   <h2 class="title reveal">Things I've shipped.</h2>
   <div class="proj-grid" style="margin-top:36px">
-    <a class="proj reveal" href="https://github.com/AyushChangedia/resume-roaster" style="text-decoration:none;color:inherit;display:block">
+    <a class="proj reveal fx-roast" href="https://github.com/AyushChangedia/resume-roaster" style="text-decoration:none;color:inherit;display:block">
+      <span class="roast-fire" aria-hidden="true"></span>
       <div class="pi">🔥</div>
       <h3>Résumé Roaster ↗</h3>
       <div class="desc">Feed it a résumé and get back an honest, LLM-powered roast — strengths, weak spots, and the buzzwords worth cutting.</div>
