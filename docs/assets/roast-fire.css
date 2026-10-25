@@ -1,126 +1,14 @@
 /* ══════════════════════════════════════════════════════════════════════════
-   Résumé Roaster — illustrated 2D fire
-   Paired with assets/roast-fire.js, which builds the flames and decides when
-   they may move. Scoped entirely to .fx-roast; no other card is touched.
-
-   Each tongue is one <i>: an SVG flame path used as a mask gives it a real
-   pointed, curved silhouette, and a gradient fills it white → gold → orange →
-   red. Its ::before is a smaller white-hot core cut from the same silhouette,
-   so the core rides along with the tongue while flickering on its own.
-
-   Motion is three independent animations per tongue, each on its own
-   transform property — scale (stretch / retract), rotate (sway) and skewX
-   (the tip bending). Every tongue gets its own periods and offsets, so the
-   sum never lines up into a visible loop. All of it runs on the compositor:
-   no layout, no paint after the first frame.
+   Résumé Roaster — flames from the reference photo, unchanged.
+   assets/roast-flames.webp is the photo's own fire, cut from its card's
+   inner area at original size: every flame pixel keeps its exact RGB, only
+   the photo's baked-in text and dark background were made transparent.
+   It is scaled with the card's width (never stretched), anchored to the
+   bottom edge, so the flames sit where they sit in the photo.
    ══════════════════════════════════════════════════════════════════════════ */
 
-/* ── the card: its content sits above the fire ──────────────────────────── */
+/* the card's content sits above the flames */
 .fx-roast{isolation:isolate}
 .fx-roast > :not(.roast-fire){position:relative;z-index:1}
-/* A tongue can rise behind the badge and the tags, so their fills are backed
-   with the card's own dark before their original tint goes on top. Over the
-   plain card they look exactly as before; over fire they stay legible. Text
-   colour, size and layout are untouched. */
-.fx-roast .metric{background:linear-gradient(rgba(52,211,153,.08),rgba(52,211,153,.08)),rgba(10,9,15,.93)}
-.fx-roast .tag{background:linear-gradient(rgba(255,255,255,.02),rgba(255,255,255,.02)),rgba(10,9,15,.93)}
-
-/* ── the fire layer ─────────────────────────────────────────────────────── */
-.roast-fire{
-  position:absolute;inset:0;z-index:0;overflow:hidden;border-radius:inherit;
-  pointer-events:none;
-  --fire-h:40%;            /* height of the tallest tongue; JS sets it in px */
-  /* silhouettes, viewBox 0 0 100 200, base at the bottom, tip at the top */
-  --shape-a:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 200' preserveAspectRatio='none'%3E%3Cpath d='M66 0C60 34 80 70 88 112C98 158 82 200 50 200C18 200 2 162 12 120C20 86 50 66 66 0Z'/%3E%3C/svg%3E");
-  --shape-b:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 200' preserveAspectRatio='none'%3E%3Cpath d='M28 0C38 40 86 66 90 118C94 164 78 200 50 200C22 200 4 166 10 124C16 92 34 66 28 0Z'/%3E%3C/svg%3E");
-  --shape-c:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 200' preserveAspectRatio='none'%3E%3Cpath d='M70 0C66 46 84 92 82 134C80 176 66 200 50 200C32 200 18 178 20 140C22 100 56 80 70 0Z'/%3E%3C/svg%3E");
-  --shape-d:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 200' preserveAspectRatio='none'%3E%3Cpath d='M30 0C36 34 52 48 56 64C62 40 70 24 80 10C76 46 94 84 92 124C90 170 74 200 50 200C24 200 6 168 10 126C14 88 34 56 30 0Z'/%3E%3C/svg%3E");
-  --shape-l:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 200' preserveAspectRatio='none'%3E%3Cpath d='M58 0C54 44 84 86 76 140C70 182 50 200 40 196C24 190 22 160 30 132C40 100 46 60 58 0Z'/%3E%3C/svg%3E");
-}
-.roast-fire i{position:absolute;display:block}
-
-/* ambient glow — warms the lower card, fades into the dark */
-.rf-amb{left:-12%;right:-12%;bottom:0;height:calc(var(--fire-h) * 2.3);
-  background:radial-gradient(58% 52% at 50% 100%,rgba(255,112,32,.34),rgba(214,58,20,.15) 46%,rgba(150,30,10,0) 76%);
-  animation:rf-pulse 2.6s ease-in-out infinite}
-
-/* the white-hot bed the tongues stand in */
-.rf-bed{left:0;right:0;bottom:0;height:calc(var(--fire-h) * .3);z-index:2;
-  background:linear-gradient(to top,rgba(255,251,230,.97),rgba(255,224,112,.84) 26%,rgba(255,156,40,.4) 60%,rgba(255,120,30,0));
-  animation:rf-pulse 1.3s ease-in-out infinite}
-
-/* tongues */
-.rf-flame{
-  left:calc(var(--x) * 1%);width:calc(var(--w) * 1%);margin-left:calc(var(--w) * -.5%);
-  bottom:calc(var(--fire-h) * -.05);height:calc(var(--fire-h) * var(--h));
-  transform-origin:50% 100%;
-  -webkit-mask:var(--shape) center / 100% 100% no-repeat;
-          mask:var(--shape) center / 100% 100% no-repeat;
-  animation:rf-stretch var(--d1) ease-in-out var(--l1) infinite,
-            rf-sway    var(--d2) ease-in-out var(--l2) infinite,
-            rf-bend    var(--d3) ease-in-out var(--l3) infinite}
-.rf-flame::before{content:'';position:absolute;left:19%;right:19%;bottom:0;height:62%;
-  -webkit-mask:inherit;mask:inherit;transform-origin:50% 100%;
-  animation:rf-core var(--d4) ease-in-out var(--l4) infinite}
-
-.rf-a{--shape:var(--shape-a)} .rf-b{--shape:var(--shape-b)} .rf-c{--shape:var(--shape-c)}
-.rf-d{--shape:var(--shape-d)} .rf-l{--shape:var(--shape-l)}
-
-/* body — wide, low tongues at the very back, so the fire has mass at
-   mid-height instead of a row of separate spikes */
-.rf-body{z-index:0;
-  background:linear-gradient(to top,#ffa232 0%,#ff7d1e 30%,#ef5719 62%,#d63b16 100%)}
-.rf-body::before{height:44%;opacity:.7;
-  background:linear-gradient(to top,#ffe08a 0%,#ffb238 45%,rgba(255,140,40,0) 100%)}
-/* back row — taller, deeper red, behind the bed */
-.rf-back{z-index:1;
-  background:linear-gradient(to top,#ffb43c 0%,#ff8c22 24%,#f3631b 52%,#df4119 80%,#c42c13 100%)}
-.rf-back::before{height:48%;opacity:.8;
-  background:linear-gradient(to top,#fff1bc 0%,#ffcf52 38%,rgba(255,160,50,0) 100%)}
-/* front row — shorter, brighter, in front of the bed */
-.rf-front{z-index:3;
-  background:linear-gradient(to top,#ffd04d 0%,#ffa726 20%,#ff8418 44%,#f75a1a 72%,#e23d1b 100%)}
-.rf-front::before{
-  background:linear-gradient(to top,#fffdf0 0%,#fff4b0 30%,#ffd84a 62%,rgba(255,196,60,0) 100%)}
-
-/* licks — small tongues that break off, rise and vanish */
-.rf-lick{z-index:var(--z,2);
-  left:calc(var(--x) * 1%);width:calc(var(--w) * 1%);margin-left:calc(var(--w) * -.5%);
-  bottom:calc(var(--fire-h) * var(--y));height:calc(var(--fire-h) * var(--h));
-  transform-origin:50% 100%;opacity:0;
-  -webkit-mask:var(--shape) center / 100% 100% no-repeat;
-          mask:var(--shape) center / 100% 100% no-repeat;
-  rotate:var(--tilt,0deg);
-  background:linear-gradient(to top,#ffd34d 0%,#ff9a22 40%,#ff6a1a 75%,#f2451a 100%);
-  animation:rf-lick var(--d1) ease-out var(--l1) infinite}
-
-/* ── keyframes: irregular stops, matched ends, so loops never show ──────── */
-@keyframes rf-stretch{
-  0%,100%{scale:1 1}       17%{scale:.92 1.14}   34%{scale:1.05 .88}
-  52%{scale:.9 1.2}        71%{scale:1.03 .93}   86%{scale:.95 1.08}}
-@keyframes rf-sway{
-  0%,100%{rotate:0deg}     23%{rotate:-3.5deg}   49%{rotate:2.2deg}   76%{rotate:-1.6deg}}
-@keyframes rf-bend{
-  0%,100%{transform:skewX(var(--lean,0deg))}
-  31%{transform:skewX(calc(var(--lean,0deg) + 6deg))}
-  64%{transform:skewX(calc(var(--lean,0deg) - 5deg))}}
-@keyframes rf-core{
-  0%,100%{scale:1 1}       28%{scale:.86 1.18}   55%{scale:1.08 .86}  80%{scale:.94 1.1}}
-@keyframes rf-lick{
-  0%{opacity:0;translate:0 0;scale:.4}
-  12%{opacity:1;scale:.9}
-  55%{opacity:1;translate:var(--dx) -60%;scale:.7}
-  100%{opacity:1;translate:calc(var(--dx) * 1.6) -140%;scale:0}}
-@keyframes rf-pulse{
-  0%,100%{opacity:.82}     38%{opacity:1}        70%{opacity:.88}}
-
-/* ── idle until the card is on screen ───────────────────────────────────── */
-.roast-fire i,.roast-fire i::before{animation-play-state:paused}
-.roast-fire.is-live i,.roast-fire.is-live i::before{animation-play-state:running}
-
-/* ── reduced motion: a still, slightly quieter fire ─────────────────────── */
-@media(prefers-reduced-motion:reduce){
-  .roast-fire i,.roast-fire i::before{animation:none!important}
-  .rf-lick{display:none}
-  .roast-fire{opacity:.88}
-}
+.roast-fire{position:absolute;inset:0;z-index:0;pointer-events:none;border-radius:inherit;
+  background:url(roast-flames.webp) center bottom / 100% auto no-repeat}
