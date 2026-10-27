@@ -1,0 +1,11 @@
+/* ══════════════════════════════════════════════════════════════════════════
+   AI Arena — the candlestick chart from the reference image, unchanged.
+   assets/arena-chart.webp is the right-hand side of that card, top to bottom:
+   every candle keeps its exact RGB; only the dark background was made
+   transparent and the overlapping text removed. Anchored right and bottom,
+   scaled to the card's height (never stretched), as it sits in the image.
+   ══════════════════════════════════════════════════════════════════════════ */
+.fx-chart{isolation:isolate}
+.fx-chart > :not(.arena-chart){position:relative;z-index:1}
+.arena-chart{position:absolute;inset:0;z-index:0;pointer-events:none;border-radius:inherit;
+  background:url(arena-chart.webp) right bottom / auto 100% no-repeat}
